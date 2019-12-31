@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
 #   name             : "Ori Press"
-  avatar           : "scuba.jpg"
+#   avatar           : "scuba.jpg"
 #   bio              : "Your biography for the left-hand sidebar"
 #   location         : "Location"
   employer         :
