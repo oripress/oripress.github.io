@@ -12,7 +12,7 @@ Hi, I'm Ori! I am about to graduate from Tel Aviv University with an MSc in Comp
 
 I'm interested in unsupervised, elegant models that can represent the world in a meaningful way. In addition, I try to take existing models and make them work using less parameters, data, and supervision.
 
-Previously, I completed my BSc degree at Tel Aviv University and briefly worked as a software developer. 
+Previously, I completed my BSc at Tel Aviv University and briefly worked as a software developer. 
 
 ### Papers ([Google Scholar](https://scholar.google.com/citations?user=vDNPTAkAAAAJ&hl=en))
 
