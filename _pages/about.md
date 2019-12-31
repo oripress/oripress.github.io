@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I'm Ori. I am about to graduate from Tel Aviv University with an MSc in Computer Science, advised by [Lior Wolf](https://www.cs.tau.ac.il/~wolf/).
+Hi, I'm Ori! I am about to graduate from Tel Aviv University with an MSc in Computer Science, advised by [Lior Wolf](https://www.cs.tau.ac.il/~wolf/).
 
 I'm interested in unsupervised, elegant models that can represent the world in a meaningful way. In addition, I try to take existing models and make them work using less parameters, data, and supervision.
 
