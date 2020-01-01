@@ -14,7 +14,7 @@ I'm interested in unsupervised, elegant models that can represent the world in a
 
 Previously, I completed my BSc at Tel Aviv University and briefly worked as a software developer. 
 
-### Papers ([Google Scholar](https://scholar.google.com/citations?user=vDNPTAkAAAAJ&hl=en))
+### Papers
 
 [Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer](https://openreview.net/pdf?id=BylE1205Fm) <br>
 **Ori Press**, Tomer Galanti, Sagie Benaim, Lior Wolf <br>
