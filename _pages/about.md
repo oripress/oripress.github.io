@@ -14,6 +14,8 @@ I'm interested in unsupervised, elegant models that can represent the world in a
 
 Previously, I completed my BSc at Tel Aviv University and briefly worked as a software developer. 
 
+My brother [Ofir Press](https://ofir.io/) is an NLP researcher.
+
 ### Papers
 
 [Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer](https://openreview.net/pdf?id=BylE1205Fm) <br>
