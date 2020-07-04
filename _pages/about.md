@@ -27,4 +27,4 @@ International Conference on Learning Representations, 2019 <br>
 
 ### Contact me
 
-[theoripress AT gmail DOT com](mailto:theoripress@gmail.com)
+[ori.press AT bethgelab DOT org](mailto:ori.press@bethgelab.org)
