@@ -23,7 +23,7 @@ My brother [Ofir Press](https://ofir.io/) is an NLP researcher.
 [Have You Already Tried Turning Your Model Off And
 On Again?
 Towards Stable Continual Test-Time Adaptation () <br>
-**Ori Press**, Matthias Bethge <br>
+**Ori Press**, Steffen Schneider, Matthias Kümmerer, Matthias Bethge <br>
 Preprint <br>
 [[paper]](CCC.pdf)<br> 
 
