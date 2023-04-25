@@ -24,7 +24,7 @@ Have You Already Tried Turning Your Model Off And
 On Again? Towards Stable Continual Test-Time Adaptation<br>
 **Ori Press**, Steffen Schneider, Matthias Kümmerer, Matthias Bethge <br>
 Preprint <br>
-[[paper]](CCC.pdf)<br> 
+[[paper]](../CCC.pdf)<br> 
 
 
 
