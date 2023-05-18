@@ -20,7 +20,7 @@ My brother [Ofir Press](https://ofir.io/) is an NLP researcher.
 ### Papers
 
 
-Questioning The Progress In Test-Time Adaptation: Have You Tried Turning Your Model Off And On Again?<br>
+RDumb: A simple approach that questions our progress in continual test-time adaptation<br>
 **Ori Press**, Steffen Schneider, Matthias Kümmerer, Matthias Bethge <br>
 *Parts of the paper were accepted in the following workshops:* <br>
 [Shift Happens '22 @ ICML](https://shift-happens-benchmark.github.io/papers.html) <br>
