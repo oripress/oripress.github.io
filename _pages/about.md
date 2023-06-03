@@ -10,11 +10,11 @@ redirect_from:
 
 Hi, I'm Ori! I'm a graduate student at the University of Tübingen and the International Max Planck Research School for Intelligent Systems (IMPRS-IS), working in [Matthias Bethge's lab](https://bethgelab.org). 
 
-
-I'm interested in unsupervised, elegant models that can represent the world in a meaningful way. In addition, I try to take existing models and make them work using less parameters, data, and supervision.
+I'm interested in closing the gap between how machine learning models perform in controlled benchmarks versus their performance in real-world scenarios.
 
 Previously, I graduated from Tel Aviv University with an BSc in Mathematics and an MSc in Computer Science, advised by [Lior Wolf](https://www.cs.tau.ac.il/~wolf/).
 
+I'm part of the [Freie Wissenschaftliche Vereinigung](https://de.wikipedia.org/wiki/Freie_Wissenschaftliche_Vereinigung).
 My brother [Ofir Press](https://ofir.io/) is an NLP researcher.
 
 ### Papers
