@@ -25,7 +25,7 @@ RDumb: A simple approach that questions our progress in continual test-time adap
 *Parts of the paper were accepted in the following workshops:* <br>
 [Shift Happens '22 @ ICML](https://shift-happens-benchmark.github.io/papers.html) <br>
 [Principles of Distribution Shift '22 @ ICML](https://sites.google.com/view/icml-2022-pods/accepted-papers) <br>
-[[paper]](https://arxiv.org/abs/2306.05401) [[code]](https://github.com/oripress/CCC) <br> 
+[[paper]](https://arxiv.org/abs/2306.05401) [[code]](https://github.com/oripress/CCC) [[bib]](https://scholar.googleusercontent.com/scholar.bib?q=info:zR3TIvj7zWYJ:scholar.google.com/&output=citation&scisdr=Cm3AAVr8ELKw2itrUnk:AGlGAw8AAAAAZIhtSnkFgcm5IgyT-Kh9o0VOTxU&scisig=AGlGAw8AAAAAZIhtSqSKt2xq9r6X0vh4g181UPY&scisf=4&ct=citation&cd=-1&hl=en) <br> 
 
 
 
