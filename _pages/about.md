@@ -26,7 +26,7 @@ International Conference on Machine Learning, 2024<br>
 
 RDumb: A simple approach that questions our progress in continual test-time adaptation<br>
 **Ori Press**, Steffen Schneider, Matthias Kümmerer, Matthias Bethge <br>
-[[paper]](https://arxiv.org/abs/2306.05401) [[code]](https://github.com/oripress/CCC) [[bib]](https://scholar.googleusercontent.com/scholar.bib?q=info:zR3TIvj7zWYJ:scholar.google.com/&output=citation&scisdr=Cm3AAVr8EPLgxSx0yJc:AGlGAw8AAAAAZIhy0JfwrZ2vL78E441BhRd47lA&scisig=AGlGAw8AAAAAZIhy0PR4stBvTv0uXjyWPwBz1w8&scisf=4&ct=citation&cd=-1&hl=en) <br> 
+[[paper]](https://arxiv.org/abs/2306.05401) [[code]](https://github.com/oripress/CCC) [[bib]](https://scholar.googleusercontent.com/scholar.bib?q=info:FKtgIz-u2mkJ:scholar.google.com/&output=citation&scisdr=ClHo6z5UELHhuYkCvmg:AFWwaeYAAAAAZjgEpmiXV7Inztyf1rNoe7divJM&scisig=AFWwaeYAAAAAZjgEpgC-hCJu8jbvww2aslKSq38&scisf=4&ct=citation&cd=-1&hl=en) <br> 
 Neural Information Processing Systems, 2023 <br>
 *Parts of the paper were accepted in the following workshops:* <br>
 [Shift Happens '22 @ ICML](https://shift-happens-benchmark.github.io/papers.html) <br>
