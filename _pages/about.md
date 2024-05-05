@@ -36,13 +36,13 @@ Neural Information Processing Systems, 2023 <br>
 Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling<br>
 Akis Linardos\*, Matthias Kümmerer\*, **Ori Press**, Matthias Bethge <br>
 International Conference on Computer Vision, 2021 <br>
-[[paper]](https://arxiv.org/pdf/2105.12441.pdf) [[bib]](https://scholar.googleusercontent.com/scholar.bib?q=info:mRRWlkjYczQJ:scholar.google.com/&output=citation&scisdr=CgUHfAF6EKP9ntQlT-E:AAGBfm0AAAAAYVMjV-HHjq-00LzXSr98S8QzK2aQDiNr&scisig=AAGBfm0AAAAAYVMjV7CkT2vIqQl-ezPiAHMFiMrREh_A&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1) <br> 
+[[paper]](https://arxiv.org/pdf/2105.12441.pdf) [[bib]](https://scholar.googleusercontent.com/scholar.bib?q=info:9S46auOoJBQJ:scholar.google.com/&output=citation&scisdr=ClHo6z5UELHhuYkDWI4:AFWwaeYAAAAAZjgFQI5UNZOhr6yEXLehAUaZyx8&scisig=AFWwaeYAAAAAZjgFQGxnSYWVBFXm_xaoQaspXro&scisf=4&ct=citation&cd=-1&hl=en) <br> 
 
 
 Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer<br>
 **Ori Press**, Tomer Galanti, Sagie Benaim, Lior Wolf <br>
 International Conference on Learning Representations, 2019 <br>
-[[paper]](https://openreview.net/pdf?id=BylE1205Fm)  [[code]](https://github.com/oripress/ContentDisentanglement) [[bib]](https://scholar.googleusercontent.com/scholar.bib?q=info:JkI2Q4VRsA8J:scholar.google.com/&output=citation&scisdr=CgUHfAF6ELuF29ciUhM:AAGBfm0AAAAAYVMkShOENZmEihCmoz4W4_v2LXTZQien&scisig=AAGBfm0AAAAAYVMkSiGBUQR0T-L0wnsaZxDKdl9U9m6F&scisf=4&ct=citation&cd=-1&hl=en) <br> 
+[[paper]](https://openreview.net/pdf?id=BylE1205Fm)  [[code]](https://github.com/oripress/ContentDisentanglement) [[bib]](https://scholar.googleusercontent.com/scholar.bib?q=info:JkI2Q4VRsA8J:scholar.google.com/&output=citation&scisdr=ClHo6z5UELHhuYkDcAA:AFWwaeYAAAAAZjgFaAAI2CjWyLyibygY0RG0rfU&scisig=AFWwaeYAAAAAZjgFaELSw8q3VUaKVZIkVSRQGv4&scisf=4&ct=citation&cd=-1&hl=en) <br> 
 
 
 ### Contact me
