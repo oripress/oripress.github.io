@@ -21,7 +21,7 @@ My brother [Ofir Press](https://ofir.io/) is an NLP researcher.
 
 The Entropy Enigma: Success and Failure of Entropy Minimization<br>
 **Ori Press**, Ravid Shwartz-Ziv, Yann LeCun, Matthias Bethge <br>
-International Conference on Machine Learning 2024<br>
+International Conference on Machine Learning, 2024<br>
 [[paper]]() [[code]](https://github.com/oripress/EntropyEnigma)
 
 RDumb: A simple approach that questions our progress in continual test-time adaptation<br>
