@@ -21,7 +21,7 @@ My brother [Ofir Press](https://ofir.io/) is an NLP researcher.
 
 CiteME: Can Language Models Accurately Cite Scientific Claims?<br>
 **Ori Press**\*, Andreas Hochlehnert*, Ameya Prabhu, Vishaal Udandarao, Ofir Press‡, Matthias Bethge‡ (\*/‡ shared first/last authorship)<br>
-Neural Information Processing Systems, 2024 <br><br>
+Neural Information Processing Systems, 2024 <br>
 [[paper]](https://arxiv.org/pdf/2407.12861) [[code]](https://github.com/bethgelab/CiteME/) [[website]](https://citeme.ai)<br>
 
 
