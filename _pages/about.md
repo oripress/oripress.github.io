@@ -19,6 +19,13 @@ My brother [Ofir Press](https://ofir.io/) is an NLP researcher.
 
 ### Papers
 
+
+SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains? <br>
+John Yang\*, Carlos E. Jimenez\*, Alex L. Zhang, Kilian Lieret, Joyce Yang, Xindi Wu, **Ori Press**, Niklas Muennighoff,
+Gabriel Synnaeve, Karthik Narasimhan, Diyi Yang, Sida I. Wang, Ofir Press <br>
+Preprint<br>
+[[paper]](https://www.swebench.com/assets/paper.pdf) [[website]](https://www.swebench.com/multimodal)<br>
+
 CiteME: Can Language Models Accurately Cite Scientific Claims?<br>
 **Ori Press**\*, Andreas Hochlehnert*, Ameya Prabhu, Vishaal Udandarao, Ofir Press‡, Matthias Bethge‡ (\*/‡ shared first/last authorship)<br>
 Neural Information Processing Systems, 2024 <br>
