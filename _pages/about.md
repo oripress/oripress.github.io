@@ -15,7 +15,7 @@ I'm interested in closing the gap between how machine learning models perform in
 Previously, I graduated from Tel Aviv University with an BSc in Mathematics and an MSc in Computer Science, advised by [Lior Wolf](https://www.cs.tau.ac.il/~wolf/).
 
 I'm part of the [Freie Wissenschaftliche Vereinigung](https://de.wikipedia.org/wiki/Freie_Wissenschaftliche_Vereinigung).
-My brother [Ofir Press](https://ofir.io/) is an NLP researcher.
+My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
 
 ### Papers <br>
 
