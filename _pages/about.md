@@ -23,7 +23,7 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
 <u>SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?</u> <br>
 John Yang\*, Carlos E. Jimenez\*, Alex L. Zhang, Kilian Lieret, Joyce Yang, Xindi Wu, **Ori Press**, Niklas Muennighoff,
 Gabriel Synnaeve, Karthik Narasimhan, Diyi Yang, Sida I. Wang, Ofir Press <br>
-Preprint, 2024<br>
+International Conference on Learning Representations, 2024<br>
 [[paper]](https://www.swebench.com/assets/paper.pdf) [[website]](https://www.swebench.com/multimodal)<br>
 
 <u>CiteME: Can Language Models Accurately Cite Scientific Claims?</u><br>
