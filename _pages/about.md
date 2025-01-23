@@ -24,12 +24,12 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
 John Yang\*, Carlos E. Jimenez\*, Alex L. Zhang, Kilian Lieret, Joyce Yang, Xindi Wu, **Ori Press**, Niklas Muennighoff,
 Gabriel Synnaeve, Karthik Narasimhan, Diyi Yang, Sida I. Wang, Ofir Press <br>
 International Conference on Learning Representations, 2025<br>
-[[paper]](https://www.swebench.com/assets/paper.pdf) [[website]](https://www.swebench.com/multimodal)<br>
+[[paper]](https://www.swebench.com/assets/paper.pdf) [[website]](https://www.swebench.com/multimodal) [[bib]](https://scholar.googleusercontent.com/scholar.bib?q=info:kkqMFtGJazAJ:scholar.google.com/&output=citation&scisdr=ClFwG_HPEOGp-SdB1TU:AFWwaeYAAAAAZ5JHzTXpNR3hCBebl4evIjHuI_Y&scisig=AFWwaeYAAAAAZ5JHze1IOvPvo_-Vc_sOce7OvCg&scisf=4&ct=citation&cd=-1&hl=en)<br>
 
 <u>CiteME: Can Language Models Accurately Cite Scientific Claims?</u><br>
 **Ori Press**\*, Andreas Hochlehnert*, Ameya Prabhu, Vishaal Udandarao, Ofir Press‡, Matthias Bethge‡ (\*/‡ shared first/last authorship)<br>
 Neural Information Processing Systems, 2024 <br>
-[[paper]](https://arxiv.org/pdf/2407.12861) [[code]](https://github.com/bethgelab/CiteME/) [[website]](https://citeme.ai)<br>
+[[paper]](https://arxiv.org/pdf/2407.12861) [[code]](https://github.com/bethgelab/CiteME/) [[website]](https://citeme.ai) [[bib]](https://scholar.googleusercontent.com/scholar.bib?q=info:jK-lKQ28QzIJ:scholar.google.com/&output=citation&scisdr=ClFwG_HPEOGp-SdBsDw:AFWwaeYAAAAAZ5JHqDwCaeCY0lbPot7OWxuSrOQ&scisig=AFWwaeYAAAAAZ5JHqB-P4u_53yaNAasfjTMbFrE&scisf=4&ct=citation&cd=-1&hl=en) <br>
 
 
 <u>The Entropy Enigma: Success and Failure of Entropy Minimization</u><br>
