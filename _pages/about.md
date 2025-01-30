@@ -29,7 +29,7 @@ International Conference on Learning Representations, 2025<br>
 <details>
   <summary>BibTeX</summary>
   
-  ```bibtex
+  ~~~bibtex
   @inproceedings{yang2025swebench,
     title={SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?},
     author={Yang, John and Jimenez, Carlos E. and Zhang, Alex L. and Lieret, Kilian and Yang, Joyce and Wu, Xindi and Press, Ori and Muennighoff, Niklas and Synnaeve, Gabriel and Narasimhan, Karthik and Yang, Diyi and Wang, Sida I. and Press, Ofir},
@@ -38,7 +38,7 @@ International Conference on Learning Representations, 2025<br>
     url={https://www.swebench.com/assets/paper.pdf},
     note={Available at \url{https://www.swebench.com/multimodal}}
   }
-  ```
+  ~~~
 </details>
 
 <u>CiteME: Can Language Models Accurately Cite Scientific Claims?</u><br>
@@ -48,7 +48,7 @@ Neural Information Processing Systems, 2024 <br>
 <details>
   <summary>BibTeX</summary>
   
-  ```bibtex
+  ~~~bibtex
   @inproceedings{press2024citeme,
     title={CiteME: Can Language Models Accurately Cite Scientific Claims?},
     author={Press, Ori and Hochlehnert, Andreas and Prabhu, Ameya and Udandarao, Vishaal and Press, Ofir and Bethge, Matthias},
@@ -57,7 +57,7 @@ Neural Information Processing Systems, 2024 <br>
     url={https://arxiv.org/pdf/2407.12861},
     note={Available at \url{https://citeme.ai}}
   }
-  ```
+  ~~~
 </details>
 
 <u>The Entropy Enigma: Success and Failure of Entropy Minimization</u><br>
@@ -67,7 +67,7 @@ International Conference on Machine Learning, 2024<br>
 <details>
   <summary>BibTeX</summary>
   
-  ```bibtex
+  ~~~bibtex
   @inproceedings{press2024entropy,
     title={The Entropy Enigma: Success and Failure of Entropy Minimization},
     author={Press, Ori and Shwartz-Ziv, Ravid and LeCun, Yann and Bethge, Matthias},
@@ -76,7 +76,7 @@ International Conference on Machine Learning, 2024<br>
     url={https://arxiv.org/pdf/2405.05012},
     note={Available at \url{https://github.com/oripress/EntropyEnigma}}
   }
-  ```
+  ~~~
 </details>
 
 <u>RDumb: A simple approach that questions our progress in continual test-time adaptation</u><br>
@@ -89,7 +89,7 @@ Neural Information Processing Systems, 2023 <br>
 <details>
   <summary>BibTeX</summary>
   
-  ```bibtex
+  ~~~bibtex
   @inproceedings{press2023rdumb,
     title={RDumb: A simple approach that questions our progress in continual test-time adaptation},
     author={Press, Ori and Schneider, Steffen and Kümmerer, Matthias and Bethge, Matthias},
@@ -98,7 +98,7 @@ Neural Information Processing Systems, 2023 <br>
     url={https://arxiv.org/abs/2306.05401},
     note={Available at \url{https://github.com/oripress/CCC}. Parts accepted at Shift Happens '22 @ ICML and Principles of Distribution Shift '22 @ ICML}
   }
-  ```
+  ~~~
 </details>
 
 <u>Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling</u><br>
@@ -108,7 +108,7 @@ International Conference on Computer Vision, 2021 <br>
 <details>
   <summary>BibTeX</summary>
   
-  ```bibtex
+  ~~~bibtex
   @inproceedings{linardos2021calibrated,
     title={Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling},
     author={Linardos, Akis and Kümmerer, Matthias and Press, Ori and Bethge, Matthias},
@@ -117,7 +117,7 @@ International Conference on Computer Vision, 2021 <br>
     url={https://arxiv.org/pdf/2105.12441.pdf},
     note={Available at \url{https://arxiv.org/pdf/2105.12441.pdf}}
   }
-  ```
+  ~~~
 </details>
 
 <u>Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer</u><br>
@@ -127,7 +127,7 @@ International Conference on Learning Representations, 2019 <br>
 <details>
   <summary>BibTeX</summary>
   
-  ```bibtex
+  ~~~bibtex
   @inproceedings{press2019disentanglement,
     title={Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer},
     author={Press, Ori and Galanti, Tomer and Benaim, Sagie and Wolf, Lior},
@@ -136,7 +136,7 @@ International Conference on Learning Representations, 2019 <br>
     url={https://openreview.net/pdf?id=BylE1205Fm},
     note={Available at \url{https://github.com/oripress/ContentDisentanglement}}
   }
-  ```
+  ~~~
 </details>
 
 
