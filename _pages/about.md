@@ -101,7 +101,7 @@ Neural Information Processing Systems, 2023
   booktitle={Neural Information Processing Systems},
   year={2023},
   url={https://arxiv.org/abs/2306.05401},
-  note={Available at \url{https://github.com/oripress/CCC}. Parts accepted at Shift Happens '22 @ ICML and Principles of Distribution Shift '22 @ ICML}
+  note={Available at \url{https://github.com/oripress/CCC}.}
 }</div>
 
 <u>Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling</u>  
