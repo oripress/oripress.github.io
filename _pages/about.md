@@ -58,7 +58,7 @@ International Conference on Learning Representations, 2025
   author={Yang, John and Jimenez, Carlos E. and Zhang, Alex L. and Lieret, Kilian and Yang, Joyce and Wu, Xindi and Press, Ori and Muennighoff, Niklas and Synnaeve, Gabriel and Narasimhan, Karthik and Yang, Diyi and Wang, Sida I. and Press, Ofir},
   booktitle={International Conference on Learning Representations},
   year={2025},
-  url={https://www.swebench.com/assets/paper.pdf},
+  url={https://arxiv.org/abs/2410.03859},
   note={Available at \url{https://www.swebench.com/multimodal}}
 }</div>
 
