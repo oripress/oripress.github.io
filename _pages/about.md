@@ -128,7 +128,6 @@ International Conference on Computer Vision, 2021
   booktitle={International Conference on Computer Vision},
   year={2021},
   url={https://arxiv.org/pdf/2105.12441.pdf},
-  note={Available at \url{https://arxiv.org/pdf/2105.12441.pdf}}
 }</div>
 
 <u>Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer</u>  
