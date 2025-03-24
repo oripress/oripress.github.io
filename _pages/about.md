@@ -92,12 +92,18 @@ Neural Information Processing Systems, 2024
 International Conference on Machine Learning, 2024  
 [[paper]](https://arxiv.org/pdf/2405.05012) [[code]](https://github.com/oripress/EntropyEnigma) [[bibtex]](javascript:toggleBibtex('bibtex-entropy'))
 <div id="bibtex-entropy" class="bibtex-block">@inproceedings{press2024entropy,
-  title={The Entropy Enigma: Success and Failure of Entropy Minimization},
-  author={Press, Ori and Shwartz-Ziv, Ravid and LeCun, Yann and Bethge, Matthias},
-  booktitle={International Conference on Machine Learning},
-  year={2024},
-  url={https://arxiv.org/pdf/2405.05012},
-  note={Available at \url{https://github.com/oripress/EntropyEnigma}}
+  title     = {The Entropy Enigma: Success and Failure of Entropy Minimization},
+  author    = {Press, Ori and Shwartz-Ziv, Ravid and LeCun, Yann and Bethge, Matthias},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+  year      = {2024},
+  volume    = {235},
+  pages     = {41064--41085},
+  publisher = {PMLR},
+  address   = {Vienna, Austria},
+  url       = {https://proceedings.mlr.press/v235/press24a.html},
+  note      = {Code available at \url{https://github.com/oripress/EntropyEnigma}}
+}
+
 }</div>
 
 <u>RDumb: A simple approach that questions our progress in continual test-time adaptation</u>  
