@@ -101,6 +101,7 @@ International Conference on Machine Learning, 2024
   publisher = {PMLR},
   address   = {Vienna, Austria},
   url       = {https://proceedings.mlr.press/v235/press24a.html},
+  pdf       = {https://raw.githubusercontent.com/mlresearch/v235/main/assets/press24a/press24a.pdf},
   note      = {Code available at \url{https://github.com/oripress/EntropyEnigma}}
 }
 
