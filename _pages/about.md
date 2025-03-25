@@ -78,13 +78,13 @@ International Conference on Learning Representations, 2025
 **Ori Press**\*, Andreas Hochlehnert*, Ameya Prabhu, Vishaal Udandarao, Ofir Press‡, Matthias Bethge‡ (\*/‡ shared first/last authorship)  
 Neural Information Processing Systems, 2024  
 [[paper]](https://arxiv.org/pdf/2407.12861) [[code]](https://github.com/bethgelab/CiteME/) [[website]](https://citeme.ai) [[bibtex]](javascript:toggleBibtex('bibtex-citeme'))
-<div id="bibtex-citeme" class="bibtex-block">@inproceedings{press2024citeme,
+<div id="bibtex-citeme" class="bibtex-block">@article{press2024citeme,
   title={CiteME: Can Language Models Accurately Cite Scientific Claims?},
   author={Press, Ori and Hochlehnert, Andreas and Prabhu, Ameya and Udandarao, Vishaal and Press, Ofir and Bethge, Matthias},
-  booktitle={Neural Information Processing Systems},
-  year={2024},
-  url={https://arxiv.org/pdf/2407.12861},
-  note={Available at \url{https://citeme.ai}}
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={7847--7877},
+  year={2024}
 }</div>
 
 <u>The Entropy Enigma: Success and Failure of Entropy Minimization</u>  
@@ -114,25 +114,26 @@ Neural Information Processing Systems, 2023
 [Shift Happens '22 @ ICML](https://shift-happens-benchmark.github.io/papers.html)  
 [Principles of Distribution Shift '22 @ ICML](https://sites.google.com/view/icml-2022-pods/accepted-papers)  
 [[paper]](https://arxiv.org/abs/2306.05401) [[code]](https://github.com/oripress/CCC) [[bibtex]](javascript:toggleBibtex('bibtex-rdumb'))
-<div id="bibtex-rdumb" class="bibtex-block">@inproceedings{press2023rdumb,
-  title={RDumb: A simple approach that questions our progress in continual test-time adaptation},
-  author={Press, Ori and Schneider, Steffen and Kümmerer, Matthias and Bethge, Matthias},
-  booktitle={Neural Information Processing Systems},
-  year={2023},
-  url={https://arxiv.org/abs/2306.05401},
-  note={Available at \url{https://github.com/oripress/CCC}.}
-}</div>
+<div id="bibtex-rdumb" class="bibtex-block">@article{press2023rdumb,
+  title={Rdumb: A simple approach that questions our progress in continual test-time adaptation},
+  author={Press, Ori and Schneider, Steffen and K{\"u}mmerer, Matthias and Bethge, Matthias},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  pages={39915--39935},
+  year={2023}
+}
+</div>
 
 <u>Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling</u>  
 Akis Linardos\*, Matthias Kümmerer\*, **Ori Press**, Matthias Bethge  
 International Conference on Computer Vision, 2021  
 [[paper]](https://arxiv.org/pdf/2105.12441.pdf) [[bibtex]](javascript:toggleBibtex('bibtex-calibrated'))
-<div id="bibtex-calibrated" class="bibtex-block">@inproceedings{linardos2021calibrated,
-  title={Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling},
-  author={Linardos, Akis and Kümmerer, Matthias and Press, Ori and Bethge, Matthias},
-  booktitle={International Conference on Computer Vision},
-  year={2021},
-  url={https://arxiv.org/pdf/2105.12441.pdf},
+<div id="bibtex-calibrated" class="bibtex-block">@inproceedings{linardos2021deepgaze,
+  title={DeepGaze IIE: Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling},
+  author={Linardos, Akis and K{\"u}mmerer, Matthias and Press, Ori and Bethge, Matthias},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={12919--12928},
+  year={2021}
 }</div>
 
 <u>Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer</u>  
