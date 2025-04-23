@@ -48,7 +48,7 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
 ### Papers
 
 <u>Humanity's Last Exam</u>  
-Long Phan, Alice Gatti, Ziwen Han, …, **Ori Press** *(contributed 6 questions, 1 in the top 550)*  
+Long Phan, Alice Gatti, Ziwen Han, …, **Ori Press** … *(contributed 6 questions, 1 in the top 550)*  
 Preprint, 2025  
 [[paper]](https://arxiv.org/abs/2501.14249) [[website]](https://agi.safe.ai/) [[bibtex]](javascript:toggleBibtex('bibtex-humanitysexam'))
 <div id="bibtex-humanitysexam" class="bibtex-block">@misc{phan2025humanitysexam,
