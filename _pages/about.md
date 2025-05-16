@@ -39,7 +39,8 @@ function toggleBibtex(id) {
 
 Hi, I'm Ori! I'm a graduate student at the University of Tübingen and the International Max Planck Research School for Intelligent Systems (IMPRS-IS), working in [Matthias Bethge's lab](https://bethgelab.org). 
 
-I'm interested in closing the gap between how machine learning models perform in known benchmarks versus their performance in more complicated real-world scenarios.
+I'm interested in closing the gap between how machine learning models perform in known benchmarks versus their performance in more complicated real-world scenarios. During my PhD, I had the privilege of collaborating with [Ravid Shwartz-Ziv](https://www.ravid-shwartz-ziv.com/), [Yann LeCun](http://yann.lecun.com/), and [Ofir Press](https://ofir.io/).
+ 
 
 Previously, I graduated from Tel Aviv University with a BSc in Mathematics and an MSc in Computer Science, advised by [Lior Wolf](https://www.cs.tau.ac.il/~wolf/).
 
@@ -48,7 +49,7 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
 ### Papers
 
 <u>Humanity's Last Exam</u>  
-Long Phan, Alice Gatti, Ziwen Han, …, **Ori Press** … *(contributed 6 questions, 1 in the top 550)*  
+Long Phan, Alice Gatti, Ziwen Han, …, **Ori Press**, … *(contributed 6 questions, 1 in the top 550)*  
 Preprint, 2025  
 [[paper]](https://arxiv.org/abs/2501.14249) [[website]](https://agi.safe.ai/) [[bibtex]](javascript:toggleBibtex('bibtex-humanitysexam'))
 <div id="bibtex-humanitysexam" class="bibtex-block">@misc{phan2025humanitysexam,
