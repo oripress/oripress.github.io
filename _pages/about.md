@@ -47,6 +47,9 @@ Previously, I graduated from Tel Aviv University with a BSc in Mathematics and a
 My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
 
 ### Papers
+<u>AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs?</u>  **Ori Press**, Brandon Amos, Haoyu Zhao, Yikai Wu, Samuel Ainsworth, Dominik Krupke, Patrick Kidger, Touqir Sajed, Bartolomeo Stellato, Jisun Park, Nathanael Bosch, Eli Meril, Albert Steppi, Arman Zharmagambetov, Fangzhao Zhang, David Pérez–Piñeiro, Alberto Mercurio, Ni Zhan, Talor Abramovich, Kilian Lieret, Hanlin Zhang, Shirley Huang, Matthias Bethge, Ofir Press
+Preprint
+[[paper]](https://www.algotune.io/paper.pdf) [[website]](https://www.algotune.io)
 
 <u>Humanity's Last Exam</u>  
 Long Phan, Alice Gatti, Ziwen Han, …, **Ori Press**, … *(contributed 6 questions, 1 in the top 550)*  
