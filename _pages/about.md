@@ -61,9 +61,9 @@ body {
 .pub-entry {
     margin-bottom: 2em;
     /* space for thumbnail on left */
-    padding-left: 120px;
+    padding-left: 140px;
     background-repeat: no-repeat;
-    background-size: auto 100px;
+    background-size: 100px auto;
     background-position: left center;
 }
 .pub-links {
