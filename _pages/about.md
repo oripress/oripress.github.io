@@ -84,6 +84,11 @@ body {
     background-color: #f0f0f0;
     text-decoration: none !important;
 }
+/* enlarged site title */
+.masthead__menu-item--lg a {
+    font-size: 130%;
+    color: #001f54 !important;
+}
 .publications-heading {
     font-size: 1.1em;
     margin-bottom: 0.5em;
