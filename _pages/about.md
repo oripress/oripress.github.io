@@ -59,14 +59,18 @@ body {
     text-decoration: underline;
 }
 .pub-entry {
+    display: flex;
+    align-items: center;
     margin-bottom: 2em;
-    /* space for thumbnail on left */
-    position: relative;
-    min-height: 130px;
-    padding-left: 150px; /* new gutter */
-    background-repeat: no-repeat;
-    background-size: 120px 120px; /* square area */
-    background-position: 15px center;
+}
+
+.pub-thumb {
+    flex: 0 0 120px;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
 }
 .pub-links {
     margin: 0.5em 0;
@@ -114,7 +118,8 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
 
 <h2 class="publications-heading">Publications</h2>
 <div class="publications">
-  <div class="pub-entry" style="background-image: url('/assets/thumb-algotune.png');">
+  <div class="pub-entry">
+    <div class="pub-thumb" style="background-image: url('/assets/thumb-algotune.png');"></div>
     <strong class="pub-title">AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs?</strong><br>
     <span class="pub-authors"><u>Ori Press</u>, Brandon Amos, Haoyu Zhao, Yikai Wu, Samuel Ainsworth, Dominik Krupke, Patrick Kidger, Touqir Sajed, Bartolomeo Stellato, Jisun Park, Nathanael Bosch, Eli Meril, Albert Steppi, Arman Zharmagambetov, Fangzhao Zhang, David Pérez–Piñeiro, Alberto Mercurio, Ni Zhan, Talor Abramovich, Kilian Lieret, Hanlin Zhang, Shirley Huang, Matthias Bethge, Ofir Press</span><br>
     <em class="pub-conf">Preprint, 2025</em><br>
@@ -123,7 +128,8 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
       <a class="pub-button" href="https://www.algotune.io">Website</a>
     </div>
   </div>
-  <div class="pub-entry" style="background-image: url('/assets/thumb-humanitysexam.png');">
+  <div class="pub-entry">
+    <div class="pub-thumb" style="background-image: url('/assets/thumb-humanitysexam.png');"></div>
     <strong class="pub-title">Humanity's Last Exam</strong><br>
     <span class="pub-authors">Long Phan, Alice Gatti, Ziwen Han, …, <u>Ori Press</u>, … *(contributed 6 questions, 1 in the top 550)*</span><br>
     <em class="pub-conf">Preprint, 2025</em><br>
@@ -142,7 +148,8 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
   url={https://arxiv.org/abs/2501.14249},
 }</div>
   </div>
-  <div class="pub-entry" style="background-image: url('/assets/thumb-swebench.png');">
+  <div class="pub-entry">
+    <div class="pub-thumb" style="background-image: url('/assets/thumb-swebench.png');"></div>
     <strong class="pub-title">SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?</strong><br>
     <span class="pub-authors">John Yang*, Carlos E. Jimenez*, Alex L. Zhang, Kilian Lieret, Joyce Yang, Xindi Wu, <u>Ori Press</u>, Niklas Muennighoff, Gabriel Synnaeve, Karthik Narasimhan, Diyi Yang, Sida I. Wang, Ofir Press</span><br>
     <em class="pub-conf">International Conference on Learning Representations, 2025</em><br>
@@ -160,7 +167,8 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
   note={Available at \url{https://www.swebench.com/multimodal}}
 }</div>
   </div>
-  <div class="pub-entry" style="background-image: url('/assets/thumb-citeme.png');">
+  <div class="pub-entry">
+    <div class="pub-thumb" style="background-image: url('/assets/thumb-citeme.png');"></div>
     <strong class="pub-title">CiteME: Can Language Models Accurately Cite Scientific Claims?</strong><br>
     <span class="pub-authors"><u>Ori Press</u>*, Andreas Hochlehnert*, Ameya Prabhu, Vishaal Udandarao, Ofir Press‡, Matthias Bethge‡ (*/‡ shared first/last authorship)</span><br>
     <em class="pub-conf">Neural Information Processing Systems, 2024</em><br>
@@ -179,7 +187,8 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
   year={2024}
 }</div>
   </div>
-  <div class="pub-entry" style="background-image: url('/assets/thumb-entropy.png');">
+  <div class="pub-entry">
+    <div class="pub-thumb" style="background-image: url('/assets/thumb-entropy.png');"></div>
     <strong class="pub-title">The Entropy Enigma: Success and Failure of Entropy Minimization</strong><br>
     <span class="pub-authors"><u>Ori Press</u>, Ravid Shwartz-Ziv, Yann LeCun, Matthias Bethge</span><br>
     <em class="pub-conf">International Conference on Machine Learning, 2024</em><br>
@@ -204,7 +213,8 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
 
 </div>
   </div>
-  <div class="pub-entry" style="background-image: url('/assets/thumb-rdumb.png');">
+  <div class="pub-entry">
+    <div class="pub-thumb" style="background-image: url('/assets/thumb-rdumb.png');"></div>
     <strong class="pub-title">RDumb: A simple approach that questions our progress in continual test-time adaptation</strong><br>
     <span class="pub-authors"><u>Ori Press</u>, Steffen Schneider, Matthias Kümmerer, Matthias Bethge</span><br>
     <em class="pub-conf">Neural Information Processing Systems, 2023</em><br>
@@ -223,7 +233,8 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
 }
 </div>
   </div>
-  <div class="pub-entry" style="background-image: url('/assets/thumb-calibrated.png');">
+  <div class="pub-entry">
+    <div class="pub-thumb" style="background-image: url('/assets/thumb-calibrated.png');"></div>
     <strong class="pub-title">Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling</strong><br>
     <span class="pub-authors">Akis Linardos*, Matthias Kümmerer*, <u>Ori Press</u>, Matthias Bethge</span><br>
     <em class="pub-conf">International Conference on Computer Vision, 2021</em><br>
@@ -239,7 +250,8 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
   year={2021}
 }</div>
   </div>
-  <div class="pub-entry" style="background-image: url('/assets/thumb-emerging.png');">
+  <div class="pub-entry">
+    <div class="pub-thumb" style="background-image: url('/assets/thumb-emerging.png');"></div>
     <strong class="pub-title">Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer</strong><br>
     <span class="pub-authors"><u>Ori Press</u>, Tomer Galanti, Sagie Benaim, Lior Wolf</span><br>
     <em class="pub-conf">International Conference on Learning Representations, 2019</em><br>
