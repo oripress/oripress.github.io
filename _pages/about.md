@@ -61,10 +61,12 @@ body {
 .pub-entry {
     margin-bottom: 2em;
     /* space for thumbnail on left */
-    padding-left: 200px;
+    position: relative;
+    min-height: 130px;
+    padding-left: 150px; /* new gutter */
     background-repeat: no-repeat;
-    background-size: 175px auto;
-    background-position: left center;
+    background-size: 120px 120px; /* square area */
+    background-position: 15px center;
 }
 .pub-links {
     margin: 0.5em 0;
