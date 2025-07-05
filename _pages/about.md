@@ -68,14 +68,15 @@ body {
     display: inline-block;
     padding: 0.4em 0.8em;
     margin-right: 0.5em;
-    background-color: #0366d6;
-    color: #fff;
-    border-radius: 4px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
     text-decoration: none;
+    text-transform: lowercase;
     font-size: 0.9em;
 }
 .pub-button:hover {
-    background-color: #0356b6;
+    background-color: #f0f0f0;
 }
 .publications-heading {
     font-size: 1.75em;
