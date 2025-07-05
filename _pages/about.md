@@ -61,10 +61,7 @@ body {
 .pub-entry {
     display: flex !important;
     align-items: flex-start !important;
-    grid-template-columns: 120px auto;
-    column-gap: 20px;
-    align-items: start;
-    margin-bottom: 2em;
+    gap: 20px !important;
 }
 .pub-entry > .pub-content {
     /* not needed with flex layout */
@@ -73,6 +70,7 @@ body {
     display: flex !important;
     flex-direction: column !important;
     gap: 0.2em !important;
+    flex: 1 1 auto !important;
 }
 .pub-thumb {
     width: 120px;
