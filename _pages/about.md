@@ -116,9 +116,9 @@ body {
 }
 </style>
 
-Hi, I'm Ori! I'm a graduate student at the University of Tübingen and the International Max Planck Research School for Intelligent Systems (IMPRS-IS), working in [Matthias Bethge's lab](https://bethgelab.org). 
+Hi, I'm Ori! I'm a graduate student at the University of Tübingen and the International Max Planck Research School for Intelligent Systems (IMPRS-IS), working in [Matthias Bethge's lab](https://bethgelab.org). I'm interested in closing the gap between how machine learning models perform in known benchmarks versus their performance in more complicated real-world scenarios. 
 
-I'm interested in closing the gap between how machine learning models perform in known benchmarks versus their performance in more complicated real-world scenarios. During my PhD, I had the privilege of collaborating with [Ravid Shwartz-Ziv](https://www.ravid-shwartz-ziv.com/), [Yann LeCun](http://yann.lecun.com/), and [Ofir Press](https://ofir.io/).
+During my PhD, I had the privilege of collaborating with [Ravid Shwartz-Ziv](https://www.ravid-shwartz-ziv.com/), [Yann LeCun](http://yann.lecun.com/), and [Ofir Press](https://ofir.io/).
  
 
 Previously, I graduated from Tel Aviv University with a BSc in Mathematics and an MSc in Computer Science, advised by [Lior Wolf](https://www.cs.tau.ac.il/~wolf/).
