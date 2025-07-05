@@ -235,3 +235,25 @@
     }
   }
 }
+
+// Add tooltip for email-item entries
+.author__urls li.email-item {
+  position: relative;
+}
+
+.author__urls li.email-item::after {
+  content: attr(data-email);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid $border-color;
+  padding: 0.2em 0.4em;
+  white-space: nowrap;
+  display: none;
+  z-index: 20;
+}
+
+.author__urls li.email-item:hover::after {
+  display: block;
+}
