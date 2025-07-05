@@ -74,6 +74,7 @@ body {
     flex: 1 1 auto !important;
 }
 .pub-thumb {
+    flex: 0 0 150px !important;
     width: 150px !important;
     height: 150px !important;
     background-size: cover !important;
