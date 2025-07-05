@@ -61,9 +61,9 @@ body {
 .pub-entry {
     margin-bottom: 2em;
     /* space for thumbnail on left */
-    padding-left: 140px;
+    padding-left: 165px;
     background-repeat: no-repeat;
-    background-size: 100px auto;
+    background-size: 125px auto;
     background-position: left center;
 }
 .pub-links {
@@ -85,7 +85,7 @@ body {
     text-decoration: none !important;
 }
 .publications-heading {
-    font-size: 1.75em;
+    font-size: 1.5em;
     margin-bottom: 0.5em;
 }
 </style>
