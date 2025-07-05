@@ -304,7 +304,3 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
     </div>
   </div>
 </div>
-
-### Contact me
-
-[ori.press@bethgelab.org](mailto:ori.press@bethgelab.org)
