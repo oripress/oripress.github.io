@@ -71,6 +71,9 @@ body {
     background-size: cover;
     background-position: center;
 }
+.pub-entry > :not(.pub-thumb) {
+    grid-column: 2;
+}
 .pub-links {
     margin: 0.5em 0;
 }
