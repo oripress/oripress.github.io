@@ -60,10 +60,10 @@ body {
 }
 .pub-entry {
     margin-bottom: 2em;
-    /* space for 50px-high thumbnail on left */
-    padding-left: 60px;
+    /* space for thumbnail on left */
+    padding-left: 90px;
     background-repeat: no-repeat;
-    background-size: auto 50px;
+    background-size: auto 80px;
     background-position: left center;
 }
 .pub-links {
@@ -76,12 +76,13 @@ body {
     border: 1px solid #000;
     background-color: #fff;
     color: #000;
-    text-decoration: none;
+    text-decoration: none !important;
     text-transform: lowercase;
     font-size: 0.9em;
 }
 .pub-button:hover {
     background-color: #f0f0f0;
+    text-decoration: none !important;
 }
 .publications-heading {
     font-size: 1.75em;
@@ -133,7 +134,7 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
     <span class="pub-authors">John Yang*, Carlos E. Jimenez*, Alex L. Zhang, Kilian Lieret, Joyce Yang, Xindi Wu, <u>Ori Press</u>, Niklas Muennighoff, Gabriel Synnaeve, Karthik Narasimhan, Diyi Yang, Sida I. Wang, Ofir Press</span><br>
     <em class="pub-conf">International Conference on Learning Representations, 2025</em><br>
     <div class="pub-links">
-      <a class="pub-button" href="https://www.swebench.com/assets/paper.pdf">Paper</a>
+      <a class="pub-button" href="https://arxiv.org/abs/2410.03859">Paper</a>
       <a class="pub-button" href="https://www.swebench.com/multimodal">Website</a>
       <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-swebench')">Bibtex</a>
     </div>
