@@ -89,6 +89,12 @@ body {
     font-size: 130%;
     color: #001f54 !important;
 }
+/* profile picture adjustments */
+.author__avatar img {
+    border-radius: 0 !important;
+    border: none !important;
+    max-width: 225px;
+}
 .publications-heading {
     font-size: 1.1em;
     margin-bottom: 0.5em;
