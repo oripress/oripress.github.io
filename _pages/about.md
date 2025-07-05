@@ -62,6 +62,7 @@ body {
     display: flex !important;
     align-items: flex-start !important;
     gap: 20px !important;
+    margin-bottom: 2em !important;
 }
 .pub-entry > .pub-content {
     /* not needed with flex layout */
@@ -73,10 +74,11 @@ body {
     flex: 1 1 auto !important;
 }
 .pub-thumb {
-    width: 120px;
-    height: 120px;
-    background-size: cover;
-    background-position: center;
+    width: 150px !important;
+    height: 150px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    margin-right: 0;
 }
 .pub-links {
     margin: 0.5em 0;
