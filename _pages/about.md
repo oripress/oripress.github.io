@@ -59,18 +59,17 @@ body {
     text-decoration: underline;
 }
 .pub-entry {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    column-gap: 20px;
+    align-items: start;
     margin-bottom: 2em;
 }
-
 .pub-thumb {
-    flex: 0 0 120px;
     width: 120px;
     height: 120px;
     background-size: cover;
     background-position: center;
-    margin-right: 20px;
 }
 .pub-links {
     margin: 0.5em 0;
