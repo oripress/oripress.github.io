@@ -114,6 +114,45 @@ body {
     font-size: 1.1em;
     margin-bottom: 0.5em;
 }
+
+/* Mobile-specific author profile styling */
+@media (max-width: 768px) {
+    .author__avatar {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    
+    .author__avatar img {
+        max-width: 80px !important;
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 50% !important;
+    }
+    
+    .author__urls-wrapper .btn {
+        font-size: 0 !important;
+        padding: 8px 12px !important;
+    }
+    
+    .author__urls-wrapper .btn::after {
+        content: '';
+        font-size: 0;
+    }
+    
+    /* Fix publication button wrapping on mobile */
+    .pub-links {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 0.5em !important;
+        margin: 0.5em 0 !important;
+    }
+    
+    .pub-button {
+        margin-right: 0 !important;
+        margin-bottom: 0.5em !important;
+        flex-shrink: 0 !important;
+    }
+}
 </style>
 
 Hi, I'm Ori! I'm a graduate student at the University of Tübingen and the International Max Planck Research School for Intelligent Systems (IMPRS-IS), working in [Matthias Bethge's lab](https://bethgelab.org). I'm interested in closing the gap between how machine learning models perform in known benchmarks versus their performance in more complicated real-world scenarios. 
