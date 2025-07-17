@@ -129,14 +129,25 @@ body {
         border-radius: 50% !important;
     }
     
+    /* Hide the Follow button completely on mobile */
     .author__urls-wrapper .btn {
-        font-size: 0 !important;
-        padding: 8px 12px !important;
+        display: none !important;
     }
     
-    .author__urls-wrapper .btn::after {
-        content: '';
-        font-size: 0;
+    /* Show the social links directly on mobile */
+    .author__urls {
+        display: block !important;
+        position: static !important;
+        margin: 10px 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+    
+    .author__urls:before,
+    .author__urls:after {
+        display: none !important;
     }
     
     /* Fix publication button wrapping on mobile */
