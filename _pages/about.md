@@ -118,15 +118,15 @@ body {
 /* Mobile-specific author profile styling */
 @media (max-width: 768px) {
     .author__avatar {
-        width: 80px !important;
-        height: 80px !important;
+        width: 120px !important;
+        height: auto !important;
     }
     
     .author__avatar img {
-        max-width: 80px !important;
-        width: 80px !important;
-        height: 80px !important;
-        border-radius: 50% !important;
+        max-width: 120px !important;
+        width: 120px !important;
+        height: auto !important;
+        border-radius: 0 !important;
     }
     
     /* Hide the Follow button completely on mobile */
