@@ -167,7 +167,7 @@ body {
 </style>
 
 <div style="background-color: #e6f3ff; padding: 15px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #4a90e2;">
-I just defended my PhD 🎓 and I'm on the industry job market. I'm interested in AI systems for novel algorithm discovery and science. Please reach out! 🚀✨
+I just defended my PhD 🎓 and I'm on the industry job market. I'm interested in AI systems for novel algorithm discovery and science. Feel free reach out! 🚀✨
 </div>
 
 Hi, I'm Ori! I'm a graduate student at the University of Tübingen and the International Max Planck Research School for Intelligent Systems (IMPRS-IS), working in [Matthias Bethge's lab](https://bethgelab.org). I'm interested in closing the gap between how machine learning models perform in known benchmarks versus their performance in more complicated real-world scenarios. 
