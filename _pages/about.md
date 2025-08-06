@@ -188,8 +188,10 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
       <span class="pub-authors"><u>Ori Press</u>, Brandon Amos, Haoyu Zhao, Yikai Wu, Samuel Ainsworth, Dominik Krupke, Patrick Kidger, Touqir Sajed, Bartolomeo Stellato, Jisun Park, Nathanael Bosch, Eli Meril, Albert Steppi, Arman Zharmagambetov, Fangzhao Zhang, David Pérez–Piñeiro, Alberto Mercurio, Ni Zhan, Talor Abramovich, Kilian Lieret, Hanlin Zhang, Shirley Huang, Matthias Bethge, Ofir Press</span><br>
       <em class="pub-conf">Preprint, 2025</em><br>
       <div class="pub-links">
-        <a class="pub-button" href="https://www.algotune.io/paper.pdf">Paper</a>
+        <a class="pub-button" href="https://www.arxiv.org/abs/2507.15887">Paper</a>
         <a class="pub-button" href="https://www.algotune.io">Website</a>
+        <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-algotune')">Bibtex</a>
+</div> <div id="bibtex-algotune" class="bibtex-block">@article{press2025algotune, title={AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs?}, author={Press, Ori and Amos, Brandon and Zhao, Haoyu and Wu, Yikai and Ainsworth, Samuel K. and Krupke, Dominik and Kidger, Patrick and Sajed, Touqir and Stellato, Bartolomeo and Park, Jisun and Bosch, Nathanael and Meril, Eli and Steppi, Albert and Zharmagambetov, Arman and Zhang, Fangzhao and Perez-Pineiro, David and Mercurio, Alberto and Zhan, Ni and Abramovich, Talor and Lieret, Kilian and Zhang, Hanlin and Huang, Shirley and Bethge, Matthias and Press, Ofir}, journal={arXiv preprint arXiv:2507.15887}, year={2025}, doi={10.48550/arXiv.2507.15887}, url={https://arxiv.org/abs/2507.15887}}</div>
       </div>
       <div id="bibtex-humanitysexam" class="bibtex-block">@misc{phan2025humanitysexam,
   title={Humanity's Last Exam},
@@ -357,4 +359,3 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
 }</div>
     </div>
   </div>
-</div>
