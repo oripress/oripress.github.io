@@ -186,7 +186,7 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
     <div class="pub-content">
       <strong class="pub-title">AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs?</strong><br>
       <span class="pub-authors"><u>Ori Press</u>, Brandon Amos, Haoyu Zhao, Yikai Wu, Samuel Ainsworth, Dominik Krupke, Patrick Kidger, Touqir Sajed, Bartolomeo Stellato, Jisun Park, Nathanael Bosch, Eli Meril, Albert Steppi, Arman Zharmagambetov, Fangzhao Zhang, David Pérez–Piñeiro, Alberto Mercurio, Ni Zhan, Talor Abramovich, Kilian Lieret, Hanlin Zhang, Shirley Huang, Matthias Bethge, Ofir Press</span><br>
-      <em class="pub-conf">Preprint, 2025</em><br>
+      <em class="pub-conf">Neural Information Processing Systems, 2025</em><br>
       <div class="pub-links">
         <a class="pub-button" href="https://www.arxiv.org/abs/2507.15887">Paper</a>
         <a class="pub-button" href="https://www.algotune.io">Website</a>
