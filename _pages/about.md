@@ -166,7 +166,7 @@ body {
 }
 </style>
 
-<div style="background-color: #e6f3ff; padding: 15px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #4a90e2;">
+<div style="background-color: #fff; padding: 15px; margin-bottom: 20px; border-radius: 8px;">
 I just defended my PhD 🎓 and I'm on the industry job market. I'm interested in AI systems for novel algorithm discovery and science. Feel free reach out! 🚀✨
 </div>
 
