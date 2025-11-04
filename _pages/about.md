@@ -190,6 +190,8 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
       <div class="pub-links">
         <a class="pub-button" href="https://www.arxiv.org/abs/2507.15887">Paper</a>
         <a class="pub-button" href="https://www.algotune.io">Website</a>
+        <a class="pub-button" href="https://github.com/scipy/scipy/pull/23786">AlgoTuner SciPy PR</a>
+        <a class="pub-button" href="https://github.com/networkx/networkx/pull/8296">AlgoTuner NetworkX PR</a>
         <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-algotune')">Bibtex</a>
 </div> <div id="bibtex-algotune" class="bibtex-block">@article{press2025algotune, title={AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs?}, author={Press, Ori and Amos, Brandon and Zhao, Haoyu and Wu, Yikai and Ainsworth, Samuel K. and Krupke, Dominik and Kidger, Patrick and Sajed, Touqir and Stellato, Bartolomeo and Park, Jisun and Bosch, Nathanael and Meril, Eli and Steppi, Albert and Zharmagambetov, Arman and Zhang, Fangzhao and Perez-Pineiro, David and Mercurio, Alberto and Zhan, Ni and Abramovich, Talor and Lieret, Kilian and Zhang, Hanlin and Huang, Shirley and Bethge, Matthias and Press, Ofir}, journal={arXiv preprint arXiv:2507.15887}, year={2025}, doi={10.48550/arXiv.2507.15887}, url={https://arxiv.org/abs/2507.15887}}</div>
       </div>
@@ -278,6 +280,8 @@ My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
       <div class="pub-links">
         <a class="pub-button" href="https://arxiv.org/pdf/2405.05012">Paper</a>
         <a class="pub-button" href="https://github.com/oripress/EntropyEnigma">Code</a>
+        <a class="pub-button" href="https://x.com/ylecun/status/1790523417839722903">Yann Tweet</a>
+        <a class="pub-button" href="https://x.com/ziv_ravid/status/1790401347730178502">Ravid Tweet</a>
         <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-entropy')">Bibtex</a>
       </div>
 <div id="bibtex-entropy" class="bibtex-block">@inproceedings{press2024entropy,
