@@ -117,6 +117,7 @@ function toggleBibtex(id) {
     height: 40px;
     filter: grayscale(100%);
     display: block;
+    pointer-events: none;
 }
 
 .social-icons-container a {
@@ -124,17 +125,30 @@ function toggleBibtex(id) {
     border: none !important;
     outline: none !important;
     background: none !important;
+    background-color: transparent !important;
     box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline-block !important;
+    line-height: 0 !important;
 }
 
 .social-icons-container a:hover,
 .social-icons-container a:focus,
-.social-icons-container a:active {
+.social-icons-container a:active,
+.social-icons-container a:visited {
     background: none !important;
     background-color: transparent !important;
     opacity: 1 !important;
     text-decoration: none !important;
     box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.social-icons-container a::before,
+.social-icons-container a::after {
+    display: none !important;
 }
 
 /* publication styling */
