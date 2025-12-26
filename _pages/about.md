@@ -2,8 +2,8 @@
 permalink: /
 title: ""
 excerpt: ""
-author_profile: true
-redirect_from: 
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -20,6 +20,8 @@ function toggleBibtex(id) {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 .bibtex-block {
     display: none;
     background: #f5f5f5;
@@ -34,6 +36,87 @@ function toggleBibtex(id) {
 .bibtex-link {
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Hide default page content wrapper padding */
+.page__content {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+.page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Main container */
+.hero-section {
+    max-width: 900px;
+    margin: 60px auto 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+/* Bio section */
+.bio-text {
+    flex: 1;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.bio-text p {
+    margin-bottom: 1em;
+}
+
+.bio-text a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Profile image */
+.profile-image {
+    flex: 0 0 280px;
+    width: 280px;
+    height: 280px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* Social icons section */
+.social-icons-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.2s ease;
+    filter: grayscale(100%);
+}
+
+.social-icon:hover {
+    opacity: 0.7;
 }
 
 /* publication styling */
@@ -58,21 +141,35 @@ body {
 .pub-authors u {
     text-decoration: underline;
 }
+/* Publications section */
+.publications {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.publications-heading {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
 .pub-entry {
     display: flex !important;
     align-items: flex-start !important;
     gap: 20px !important;
-    margin-bottom: 2em !important;
+    margin-bottom: 3em !important;
 }
-.pub-entry > .pub-content {
-    /* not needed with flex layout */
-}
+
 .pub-content {
     display: flex !important;
     flex-direction: column !important;
     gap: 0.2em !important;
     flex: 1 1 auto !important;
 }
+
 .pub-thumb {
     flex: 0 0 150px !important;
     width: 150px !important;
@@ -81,9 +178,11 @@ body {
     background-position: center !important;
     margin-right: 0;
 }
+
 .pub-links {
     margin: 0.5em 0;
 }
+
 .pub-button {
     display: inline-block;
     padding: 0.2em 0.5em;
@@ -95,69 +194,43 @@ body {
     text-transform: lowercase;
     font-size: 0.9em;
 }
+
 .pub-button:hover {
     background-color: #f0f0f0;
     text-decoration: none !important;
 }
-/* enlarged site title */
-.masthead__menu-item--lg a {
-    font-size: 130%;
-    color: #001f54 !important;
-}
-/* profile picture adjustments */
-.author__avatar img {
-    border-radius: 0 !important;
-    border: none !important;
-    max-width: 225px;
-}
-.publications-heading {
-    font-size: 1.1em;
-    margin-bottom: 0.5em;
-}
 
-/* Mobile-specific author profile styling */
+/* Mobile responsive */
 @media (max-width: 768px) {
-    .author__avatar {
-        width: 120px !important;
-        height: auto !important;
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        margin: 40px auto 30px auto;
     }
-    
-    .author__avatar img {
-        max-width: 120px !important;
-        width: 120px !important;
-        height: auto !important;
-        border-radius: 0 !important;
+
+    .profile-image {
+        order: -1;
+        width: 200px;
+        height: 200px;
+        flex: 0 0 200px;
     }
-    
-    /* Hide the Follow button completely on mobile */
-    .author__urls-wrapper .btn {
-        display: none !important;
+
+    .bio-text {
+        text-align: left;
     }
-    
-    /* Show the social links directly on mobile */
-    .author__urls {
-        display: block !important;
-        position: static !important;
-        margin: 10px 0 !important;
-        padding: 0 !important;
-        border: none !important;
-        background: transparent !important;
-        box-shadow: none !important;
+
+    .social-icons-container {
+        gap: 20px;
+        flex-wrap: wrap;
     }
-    
-    .author__urls:before,
-    .author__urls:after {
-        display: none !important;
-    }
-    
-    /* Fix publication button wrapping on mobile */
+
     .pub-links {
         display: flex !important;
         flex-wrap: wrap !important;
         gap: 0.5em !important;
         margin: 0.5em 0 !important;
     }
-    
+
     .pub-button {
         margin-right: 0 !important;
         margin-bottom: 0.5em !important;
@@ -166,18 +239,45 @@ body {
 }
 </style>
 
-<div style="background-color: #e6f4ff; padding: 15px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #4a90e2;">
-I just defended my PhD 🎓 and I'm on the industry job market. I'm interested in AI systems for novel algorithm discovery and science. Feel free reach out! 🚀✨
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="bio-text">
+    <p>I just defended my PhD and I'm on the industry job market. I'm interested in AI systems for novel algorithm discovery and science. Feel free reach out!</p>
+
+    <p>Hi, I'm Ori! I'm a graduate student at the University of Tübingen and the International Max Planck Research School for Intelligent Systems (IMPRS-IS), working in <a href="https://bethgelab.org">Matthias Bethge's lab</a>. I'm interested in closing the gap between how machine learning models perform in known benchmarks versus their performance in more complicated real-world scenarios.</p>
+
+    <p>During my PhD, I had the privilege of collaborating with <a href="https://www.ravid-shwartz-ziv.com/">Ravid Shwartz-Ziv</a>, <a href="http://yann.lecun.com/">Yann LeCun</a>, and <a href="https://ofir.io/">Ofir Press</a>.</p>
+
+    <p>Previously, I graduated from Tel Aviv University with a BSc in Mathematics and an MSc in Computer Science, advised by <a href="https://www.cs.tau.ac.il/~wolf/">Lior Wolf</a>.</p>
+
+    <p>My brother <a href="https://ofir.io/">Ofir Press</a> is a machine learning researcher.</p>
+  </div>
+
+  <div class="profile-image">
+    <img src="/images/neckar.jpeg" alt="Ori Press">
+  </div>
 </div>
 
-Hi, I'm Ori! I'm a graduate student at the University of Tübingen and the International Max Planck Research School for Intelligent Systems (IMPRS-IS), working in [Matthias Bethge's lab](https://bethgelab.org). I'm interested in closing the gap between how machine learning models perform in known benchmarks versus their performance in more complicated real-world scenarios. 
-
-During my PhD, I had the privilege of collaborating with [Ravid Shwartz-Ziv](https://www.ravid-shwartz-ziv.com/), [Yann LeCun](http://yann.lecun.com/), and [Ofir Press](https://ofir.io/).
- 
-
-Previously, I graduated from Tel Aviv University with a BSc in Mathematics and an MSc in Computer Science, advised by [Lior Wolf](https://www.cs.tau.ac.il/~wolf/).
-
-My brother [Ofir Press](https://ofir.io/) is a machine learning researcher.
+<!-- Social Icons -->
+<div class="social-icons-section">
+  <div class="social-icons-container">
+    <a href="mailto:me@oripress.com" target="_blank">
+      <img src="/images/email-icon.png" alt="Email" class="social-icon">
+    </a>
+    <a href="https://twitter.com/ori_press" target="_blank">
+      <img src="/images/twitter-icon.png" alt="Twitter" class="social-icon">
+    </a>
+    <a href="https://scholar.google.com/citations?user=vDNPTAkAAAAJ&hl=en&oi=ao" target="_blank">
+      <img src="/images/scholar-icon.png" alt="Google Scholar" class="social-icon">
+    </a>
+    <a href="https://github.com/oripress" target="_blank">
+      <img src="/images/github-icon.png" alt="GitHub" class="social-icon">
+    </a>
+    <a href="https://www.linkedin.com/in/ori-press" target="_blank">
+      <img src="/images/linkedin-icon.jpg" alt="LinkedIn" class="social-icon">
+    </a>
+  </div>
+</div>
 
 <h2 class="publications-heading">Publications</h2>
 <div class="publications">
