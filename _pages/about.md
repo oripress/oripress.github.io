@@ -188,14 +188,20 @@ body {
     display: flex !important;
     align-items: flex-start !important;
     gap: 20px !important;
-    margin-bottom: 3em !important;
+    margin-bottom: 2em !important;
 }
 
 .pub-content {
     display: flex !important;
     flex-direction: column !important;
-    gap: 0.2em !important;
+    gap: 0 !important;
     flex: 1 1 auto !important;
+    line-height: 1.4 !important;
+}
+
+.pub-content > * {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .pub-thumb {
