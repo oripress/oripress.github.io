@@ -262,24 +262,42 @@ body {
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
+        align-items: center;
         text-align: center;
         margin: 40px auto 30px auto;
-    }
-
-    .profile-image {
-        order: -1;
-        width: 200px;
-        height: 200px;
-        flex: 0 0 200px;
+        gap: 30px;
     }
 
     .bio-text {
         text-align: left;
+        order: 2;
+    }
+
+    .profile-column {
+        order: 1;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .profile-image img {
+        width: 100%;
+        height: auto;
     }
 
     .social-icons-container {
         gap: 20px;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
     }
 
     .pub-links {
@@ -293,6 +311,16 @@ body {
         margin-right: 0 !important;
         margin-bottom: 0.5em !important;
         flex-shrink: 0 !important;
+    }
+
+    .pub-entry {
+        flex-direction: column;
+    }
+
+    .pub-thumb {
+        width: 100% !important;
+        height: 200px !important;
+        flex: 0 0 auto !important;
     }
 }
 </style>
