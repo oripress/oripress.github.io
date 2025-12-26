@@ -273,7 +273,7 @@ body {
       <img src="/images/twitter-icon.png" alt="Twitter" class="social-icon">
     </a>
     <a href="https://scholar.google.com/citations?user=vDNPTAkAAAAJ&hl=en&oi=ao" target="_blank">
-      <img src="/images/scholar-icon.png" alt="Google Scholar" class="social-icon">
+      <img src="/images/scholar-icon-new.png" alt="Google Scholar" class="social-icon">
     </a>
     <a href="https://github.com/oripress" target="_blank">
       <img src="/images/github-icon.png" alt="GitHub" class="social-icon">
