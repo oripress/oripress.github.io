@@ -176,8 +176,8 @@ body {
 /* Publications section */
 .publications {
     max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
+    margin: 60px auto 0 auto;
+    padding: 0 20px 0 20px;
 }
 
 .publications-heading {
