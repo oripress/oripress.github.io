@@ -20,7 +20,7 @@ function toggleBibtex(id) {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
 
 .bibtex-block {
     display: none;
@@ -36,6 +36,11 @@ function toggleBibtex(id) {
 .bibtex-link {
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Hide masthead banner */
+.masthead {
+    display: none !important;
 }
 
 /* Hide default page content wrapper padding */
@@ -64,10 +69,10 @@ function toggleBibtex(id) {
 /* Bio section */
 .bio-text {
     flex: 1;
-    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    font-weight: 300;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 400;
 }
 
 .bio-text p {
@@ -83,13 +88,12 @@ function toggleBibtex(id) {
 .profile-image {
     flex: 0 0 280px;
     width: 280px;
-    height: 280px;
+    height: auto;
 }
 
 .profile-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     border-radius: 0;
 }
 
@@ -149,11 +153,7 @@ body {
 }
 
 .publications-heading {
-    font-size: 1.5em;
-    margin-bottom: 2em;
-    text-align: center;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    display: none;
 }
 
 .pub-entry {
@@ -242,8 +242,6 @@ body {
 <!-- Hero Section -->
 <div class="hero-section">
   <div class="bio-text">
-    <p>I just defended my PhD and I'm on the industry job market. I'm interested in AI systems for novel algorithm discovery and science. Feel free reach out!</p>
-
     <p>Hi, I'm Ori! I'm a graduate student at the University of Tübingen and the International Max Planck Research School for Intelligent Systems (IMPRS-IS), working in <a href="https://bethgelab.org">Matthias Bethge's lab</a>. I'm interested in closing the gap between how machine learning models perform in known benchmarks versus their performance in more complicated real-world scenarios.</p>
 
     <p>During my PhD, I had the privilege of collaborating with <a href="https://www.ravid-shwartz-ziv.com/">Ravid Shwartz-Ziv</a>, <a href="http://yann.lecun.com/">Yann LeCun</a>, and <a href="https://ofir.io/">Ofir Press</a>.</p>
@@ -463,3 +461,4 @@ body {
 }</div>
     </div>
   </div>
+</div>
