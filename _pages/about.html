@@ -290,14 +290,24 @@ body {
     }
 
     .social-icons-container {
-        gap: 20px;
-        flex-wrap: wrap;
+        gap: 12px;
+        flex-wrap: nowrap;
         justify-content: center;
     }
 
     .social-icon {
-        width: 35px;
-        height: 35px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .social-icons-container a:hover,
+    .social-icons-container a:focus,
+    .social-icons-container a:active {
+        background: none !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        opacity: 1 !important;
+        outline: none !important;
     }
 
     .pub-links {
