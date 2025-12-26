@@ -58,11 +58,11 @@ function toggleBibtex(id) {
 
 /* Main container */
 .hero-section {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 60px auto 40px auto;
     display: flex;
-    align-items: center;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 50px;
     padding: 0 20px;
 }
 
@@ -86,8 +86,8 @@ function toggleBibtex(id) {
 
 /* Profile image */
 .profile-image {
-    flex: 0 0 280px;
-    width: 280px;
+    flex: 0 0 350px;
+    width: 350px;
     height: auto;
 }
 
@@ -115,12 +115,19 @@ function toggleBibtex(id) {
 .social-icon {
     width: 40px;
     height: 40px;
-    transition: opacity 0.2s ease;
     filter: grayscale(100%);
+    display: block;
 }
 
-.social-icon:hover {
-    opacity: 0.7;
+.social-icons-container a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.social-icons-container a:hover {
+    background: none;
+    opacity: 1;
 }
 
 /* publication styling */
@@ -262,7 +269,7 @@ body {
     <a href="mailto:me@oripress.com" target="_blank">
       <img src="/images/email-icon.png" alt="Email" class="social-icon">
     </a>
-    <a href="https://twitter.com/ori_press" target="_blank">
+    <a href="https://twitter.com/oripress" target="_blank">
       <img src="/images/twitter-icon.png" alt="Twitter" class="social-icon">
     </a>
     <a href="https://scholar.google.com/citations?user=vDNPTAkAAAAJ&hl=en&oi=ao" target="_blank">
@@ -271,8 +278,8 @@ body {
     <a href="https://github.com/oripress" target="_blank">
       <img src="/images/github-icon.png" alt="GitHub" class="social-icon">
     </a>
-    <a href="https://www.linkedin.com/in/ori-press" target="_blank">
-      <img src="/images/linkedin-icon.jpg" alt="LinkedIn" class="social-icon">
+    <a href="https://www.linkedin.com/in/oripress/" target="_blank">
+      <img src="/images/linkedin-icon-new.png" alt="LinkedIn" class="social-icon">
     </a>
   </div>
 </div>
