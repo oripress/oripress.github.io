@@ -119,6 +119,8 @@ function toggleBibtex(id) {
     filter: grayscale(100%);
     display: block;
     pointer-events: none;
+    border: 0;
+    background: transparent;
 }
 
 .social-icons-container a {
@@ -150,6 +152,17 @@ function toggleBibtex(id) {
 .social-icons-container a::before,
 .social-icons-container a::after {
     display: none !important;
+}
+
+.social-icons-container a:focus-visible {
+    outline: none !important;
+}
+
+.social-icons-container a:hover .social-icon,
+.social-icons-container a:focus .social-icon,
+.social-icons-container a:active .social-icon {
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
 /* publication styling */
@@ -428,9 +441,7 @@ body {
   url       = {https://proceedings.mlr.press/v235/press24a.html},
   pdf       = {https://raw.githubusercontent.com/mlresearch/v235/main/assets/press24a/press24a.pdf},
   note      = {Code available at \url{https://github.com/oripress/EntropyEnigma}}
-}
-
-</div>
+}</div>
     </div>
   </div>
   <div class="pub-entry">
