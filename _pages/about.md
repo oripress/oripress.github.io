@@ -97,11 +97,12 @@ function toggleBibtex(id) {
     border-radius: 0;
 }
 
-/* Social icons section */
-.social-icons-section {
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px;
+/* Profile column for image + icons */
+.profile-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .social-icons-container {
@@ -109,7 +110,7 @@ function toggleBibtex(id) {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .social-icon {
@@ -285,14 +286,12 @@ body {
     <p>My brother <a href="https://ofir.io/">Ofir Press</a> is a machine learning researcher.</p>
   </div>
 
-  <div class="profile-image">
-    <img src="/images/neckar.jpeg" alt="Ori Press">
-  </div>
-</div>
-
-<!-- Social Icons -->
-<div class="social-icons-section">
-  <div class="social-icons-container">
+  <div class="profile-column">
+    <div class="profile-image">
+      <img src="/images/neckar.jpeg" alt="Ori Press">
+    </div>
+    
+    <div class="social-icons-container">
     <a href="mailto:me@oripress.com" target="_blank">
       <img src="/images/email-icon.png" alt="Email" class="social-icon">
     </a>
@@ -308,6 +307,7 @@ body {
     <a href="https://www.linkedin.com/in/oripress/" target="_blank">
       <img src="data:image/webp;base64,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" alt="LinkedIn" class="social-icon">
     </a>
+    </div>
   </div>
 </div>
 
