@@ -48,6 +48,10 @@
   }
 }
 
+.publications-archive .archive__item-title {
+  font-size: calc(#{$type-size-4} + 1pt);
+}
+
 /* remove border*/
 .page__content {
 
