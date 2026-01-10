@@ -118,6 +118,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin: 13px 0 0;
 }
 
 .social-icon {
@@ -279,20 +280,6 @@ body {
     text-decoration: none !important;
 }
 
-/* Desktop responsive - reduce spacing between photo and icons */
-@media (min-width: 769px) {
-    .profile-image {
-        margin-bottom: 6.5px !important;
-    }
-
-    .social-icons-container {
-        margin: 0 !important;
-    }
-
-    .profile-column {
-        gap: 0 !important;
-    }
-}
 
 /* Mobile responsive */
 @media (max-width: 768px) {
@@ -397,11 +384,11 @@ body {
     <p>My brother <a href="https://ofir.io/">Ofir Press</a> is a machine learning researcher.</p>
   </div>
 
-  <div class="profile-column" style="gap: 0 !important;">
-    <div class="profile-image" style="margin-bottom: 2px !important;">
+  <div class="profile-column">
+    <div class="profile-image">
       <img src="/images/neckar.jpeg" alt="Ori Press">
     </div>
-    <div class="social-icons-container" style="margin: 0 !important;">
+    <div class="social-icons-container">
     <a href="mailto:me@oripress.com" target="_blank">
       <img src="/images/email-icon.png" alt="Email" class="social-icon">
     </a>
