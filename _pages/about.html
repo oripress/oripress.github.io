@@ -97,12 +97,35 @@ footer {
 .profile-image {
     flex: 0 0 auto;
     width: 350px;
-    height: auto;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 2px solid #75502f;
+    border-radius: 6px;
+    background:
+        repeating-linear-gradient(0deg, transparent 0 13px, #8b613229 13px 14px, transparent 14px 27px),
+        linear-gradient(135deg, #dcb886, #bb894f);
+    box-shadow: 2px 3px 0 #63452933, inset 0 0 0 1px #f2d0a3;
+}
+
+.profile-photo {
+    position: relative;
+    aspect-ratio: 787 / 524;
+    overflow: hidden;
+    border: 1px solid #75502f;
+    border-radius: 2px;
 }
 
 .profile-image img {
-    width: 100%;
+    /* Hide the white strips embedded along the photo's top and right edges. */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 101.652%;
+    max-width: none;
     height: auto;
+    border: 0;
+    padding: 0;
+    margin: 0;
     border-radius: 0;
     display: block;
 }
@@ -206,7 +229,7 @@ body::before {
 .bio-text,
 .social-icons-container,
 .pub-entry {
-    background: #f7f7f5;
+    background: #f9f9f7;
     border: 1.5px solid #c3c2bb;
     border-radius: 18px;
 }
@@ -343,12 +366,6 @@ body::before {
         margin-bottom: 0;
     }
 
-    .profile-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
     .social-icons-container {
         gap: 12px;
         flex-wrap: nowrap;
@@ -435,7 +452,9 @@ body::before {
 
   <div class="profile-column">
     <div class="profile-image">
-      <img src="/images/neckar.jpeg" alt="Ori Press">
+      <div class="profile-photo">
+        <img src="/images/neckar.jpeg" alt="Ori Press">
+      </div>
     </div>
 
     <div class="social-icons-container">
