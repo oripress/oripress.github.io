@@ -95,20 +95,29 @@ footer {
 
 /* Profile image */
 .profile-image {
+    position: relative;
     flex: 0 0 auto;
     width: 350px;
     box-sizing: border-box;
-    border: 18px solid transparent;
-    border-image: url('/assets/profile-wood-frame.svg') 25 stretch;
+    padding: 16px;
     filter: drop-shadow(2px 3px 1px #63452933);
+}
+
+.profile-image::after {
+    /* Lay the frame over the photo so the irregular inner edge has no gap. */
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-sizing: border-box;
+    border: 18px solid transparent;
+    border-image: url('/assets/profile-wood-frame.svg') 8.333333% 6.25% stretch;
+    pointer-events: none;
 }
 
 .profile-photo {
     position: relative;
     aspect-ratio: 787 / 524;
     overflow: hidden;
-    border: 1px solid #75502f;
-    border-radius: 2px;
 }
 
 .profile-image img {
