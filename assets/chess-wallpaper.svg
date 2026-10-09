@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="520" viewBox="0 0 840 520" data-doodle-major-count="68" data-doodle-accent-count="120">
+  <!--Periodic fixed scatter: edge copies keep the pattern seamless; unique doodles have shared IDs.-->
+  <defs>
+    <g id="pawn">
+      <path d="M10 15c-7-5-3-14 4-14 8 0 11 10 4 14m-8 0h8m-10 5h12m-8 0c0 9-3 14-8 19h23c-6-5-9-10-10-19M5 39l-2 6h26l-2-6" />
+    </g>
+    <g id="rook">
+      <path d="M3 1h7v6h6V1h7v6h6V1h5v15H3Zm3 15 4 20h17l4-20M9 36l-4 7h27l-5-7" />
+      <path d="M10 21h17" />
+    </g>
+    <g id="bishop">
+      <path d="M14 1c-5 6-12 11-11 18 1 6 7 9 12 9s11-4 11-10C25 11 19 6 14 1Zm1 5-4 8m-2 14h12m-10 0c0 5-3 9-7 13h23c-5-4-8-8-8-13M5 41l-3 5h28l-3-5" />
+    </g>
+    <g id="knight">
+      <path d="m17 3 3-4 4 8c11 5 13 18 12 31H9c2-9 7-13 14-19-6 2-9 1-12-2l-5 2-4-6L17 3Z" />
+      <path d="m23 9-2 5M9 38l-4 7h33l-2-7" />
+    </g>
+    <g id="king">
+      <path d="M15 0v10m-4-6h8M15 12c-4-7-13-3-11 4l4 9h14l4-9c2-7-7-11-11-4Zm-7 13h14m-11 0c0 7-3 11-6 15h20c-4-4-7-8-7-15M5 40l-3 6h26l-3-6" />
+    </g>
+    <g id="queen">
+      <path d="m3 8 4 15h15l4-15-8 6-4-10-4 10Zm4 15h15m-12 0c0 5-2 9-5 13h21c-4-4-6-8-7-13M5 36l-2 5h26l-3-5" />
+      <circle cx="2" cy="6" r="2" />
+      <circle cx="14" cy="2" r="2" />
+      <circle cx="27" cy="6" r="2" />
+    </g>
+    <g id="board-nine">
+      <path d="M0 0h29v29H0Zm10 0v29M20 0v29M0 10h29M0 20h29" />
+    </g>
+    <g id="board-four">
+      <path d="M0 0h25v25H0Zm12 0v25M0 12h25" />
+    </g>
+    <g id="arrow-bend">
+      <path d="M2 4c-3 12 3 22 18 24 9 1 19-3 22-11m-8 3 8-3 1 9" />
+    </g>
+    <g id="arrow-return">
+      <path d="M1 9c17-9 33-5 33 7 0 12-14 15-20 9m0 0 1 7m-1-7 7-1" />
+    </g>
+    <g id="arrow-flow">
+      <path d="M1 20c6-12 18-14 28-11 10 3 16 1 21-6m-8 0h8v8" />
+    </g>
+    <g id="arrow-zigzag">
+      <path d="M2 33 13 21 25 25 39 3m-8 3 8-3 1 9" />
+    </g>
+    <g id="go-board">
+      <path d="M1 1h31v31H1Zm10 0v31M21 1v31M1 11h31M1 21h31" />
+      <circle cx="11" cy="11" r="3.2" />
+      <circle cx="21" cy="21" r="3.2" />
+    </g>
+    <g id="go-stones">
+      <circle cx="9" cy="10" r="6" />
+      <circle cx="25" cy="10" r="6" />
+      <circle cx="17" cy="26" r="6" />
+    </g>
+    <g id="pawn-chain">
+      <use href="#pawn" transform="translate(0 9) scale(.66)" />
+      <use href="#pawn" transform="translate(18 0) scale(.66)" />
+    </g>
+    <g id="star">
+      <path d="m12 0 3 9 10 3-10 3-3 9-3-9-9-3 9-3Z" />
+    </g>
+    <g id="spark">
+      <path d="m5 3 2-6m4 8 5-3m-13 1-4-3" />
+    </g>
+    <g id="spiral">
+      <path d="M0 8c5-7 11-8 15-4 4 5 0 11-4 9-3-2-1-6 2-7" />
+    </g>
+    <g id="arc">
+      <path d="M0 5c5-7 9-8 14-4" />
+    </g>
+    <g id="dot">
+      <circle cx="0" cy="0" r="1.8" />
+    </g>
+    <g id="cross">
+      <path d="m0 0 4 4m-4 0 4-4" />
+    </g>
+    <g id="ring">
+      <circle cx="0" cy="0" r="3.5" />
+    </g>
+    <g id="dash-pair">
+      <path d="M0 0h8m-5 5h8" />
+    </g>
+  </defs>
+  <g fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#bishop" transform="translate(666.2 390.0) rotate(-32.4) scale(0.995) translate(-15 -23)" data-doodle="major" data-doodle-id="major-0" />
+    <use href="#arrow-return" transform="translate(415.0 313.4) rotate(-16.7) scale(0.990) translate(-18 -18)" data-doodle="major" data-doodle-id="major-1" />
+    <use href="#bishop" transform="translate(164.1 109.4) rotate(26.8) scale(0.942) translate(-15 -23)" data-doodle="major" data-doodle-id="major-2" />
+    <use href="#queen" transform="translate(559.1 272.6) rotate(13.8) scale(1.100) translate(-14 -21)" data-doodle="major" data-doodle-id="major-3" />
+    <use href="#arrow-flow" transform="translate(697.3 289.3) rotate(-7.3) scale(1.104) translate(-25 -13)" data-doodle="major" data-doodle-id="major-4" />
+    <use href="#knight" transform="translate(82.4 468.3) rotate(5.5) scale(1.049) translate(-20 -22)" data-doodle="major" data-doodle-id="major-5" />
+    <use href="#king" transform="translate(760.2 418.9) rotate(14.1) scale(1.089) translate(-15 -23)" data-doodle="major" data-doodle-id="major-6" />
+    <use href="#queen" transform="translate(835.6 60.8) rotate(31.0) scale(0.840) translate(-14 -21)" data-doodle="major" data-doodle-id="major-7" />
+    <use href="#queen" transform="translate(-4.4 60.8) rotate(31.0) scale(0.840) translate(-14 -21)" data-doodle="major" data-doodle-id="major-7" data-doodle-wrap="true" />
+    <use href="#king" transform="translate(363.8 425.2) rotate(18.5) scale(1.160) translate(-15 -23)" data-doodle="major" data-doodle-id="major-8" />
+    <use href="#arrow-zigzag" transform="translate(219.5 380.5) rotate(23.2) scale(1.157) translate(-21 -18)" data-doodle="major" data-doodle-id="major-9" />
+    <use href="#rook" transform="translate(596.9 194.5) rotate(25.6) scale(1.128) translate(-18.5 -22)" data-doodle="major" data-doodle-id="major-10" />
+    <use href="#king" transform="translate(577.6 36.7) rotate(-14.9) scale(0.905) translate(-15 -23)" data-doodle="major" data-doodle-id="major-11" />
+    <use href="#go-stones" transform="translate(332.9 95.2) rotate(-31.4) scale(1.025) translate(-17 -17)" data-doodle="major" data-doodle-id="major-12" />
+    <use href="#king" transform="translate(14.4 470.4) rotate(27.2) scale(0.845) translate(-15 -23)" data-doodle="major" data-doodle-id="major-13" />
+    <use href="#king" transform="translate(854.4 470.4) rotate(27.2) scale(0.845) translate(-15 -23)" data-doodle="major" data-doodle-id="major-13" data-doodle-wrap="true" />
+    <use href="#king" transform="translate(446.6 364.7) rotate(26.9) scale(0.899) translate(-15 -23)" data-doodle="major" data-doodle-id="major-14" />
+    <use href="#arrow-bend" transform="translate(81.8 183.0) rotate(-11.0) scale(0.972) translate(-22 -17)" data-doodle="major" data-doodle-id="major-15" />
+    <use href="#queen" transform="translate(70.9 284.3) rotate(6.9) scale(0.908) translate(-14 -21)" data-doodle="major" data-doodle-id="major-16" />
+    <use href="#king" transform="translate(227.9 137.7) rotate(-28.2) scale(0.908) translate(-15 -23)" data-doodle="major" data-doodle-id="major-17" />
+    <use href="#pawn" transform="translate(618.2 436.4) rotate(-20.2) scale(1.025) translate(-15.5 -22.5)" data-doodle="major" data-doodle-id="major-18" />
+    <use href="#pawn" transform="translate(298.3 423.0) rotate(16.7) scale(0.871) translate(-15.5 -22.5)" data-doodle="major" data-doodle-id="major-19" />
+    <use href="#arrow-return" transform="translate(585.8 383.9) rotate(11.8) scale(0.929) translate(-18 -18)" data-doodle="major" data-doodle-id="major-20" />
+    <use href="#queen" transform="translate(494.3 307.7) rotate(28.1) scale(0.918) translate(-14 -21)" data-doodle="major" data-doodle-id="major-21" />
+    <use href="#board-nine" transform="translate(266.5 7.8) rotate(-3.1) scale(0.966) translate(-14.5 -14.5)" data-doodle="major" data-doodle-id="major-22" />
+    <use href="#board-nine" transform="translate(266.5 527.8) rotate(-3.1) scale(0.966) translate(-14.5 -14.5)" data-doodle="major" data-doodle-id="major-22" data-doodle-wrap="true" />
+    <use href="#board-nine" transform="translate(98.4 10.7) rotate(-15.3) scale(0.893) translate(-14.5 -14.5)" data-doodle="major" data-doodle-id="major-23" />
+    <use href="#board-nine" transform="translate(98.4 530.7) rotate(-15.3) scale(0.893) translate(-14.5 -14.5)" data-doodle="major" data-doodle-id="major-23" data-doodle-wrap="true" />
+    <use href="#arrow-zigzag" transform="translate(682.5 508.7) rotate(6.3) scale(1.084) translate(-21 -18)" data-doodle="major" data-doodle-id="major-24" />
+    <use href="#arrow-zigzag" transform="translate(682.5 -11.3) rotate(6.3) scale(1.084) translate(-21 -18)" data-doodle="major" data-doodle-id="major-24" data-doodle-wrap="true" />
+    <use href="#pawn" transform="translate(30.9 237.9) rotate(-12.7) scale(1.027) translate(-15.5 -22.5)" data-doodle="major" data-doodle-id="major-25" />
+    <use href="#arrow-zigzag" transform="translate(831.9 402.4) rotate(-33.1) scale(1.126) translate(-21 -18)" data-doodle="major" data-doodle-id="major-26" />
+    <use href="#arrow-zigzag" transform="translate(-8.1 402.4) rotate(-33.1) scale(1.126) translate(-21 -18)" data-doodle="major" data-doodle-id="major-26" data-doodle-wrap="true" />
+    <use href="#arrow-flow" transform="translate(376.6 236.6) rotate(20.8) scale(1.149) translate(-25 -13)" data-doodle="major" data-doodle-id="major-27" />
+    <use href="#queen" transform="translate(301.0 298.2) rotate(13.7) scale(1.034) translate(-14 -21)" data-doodle="major" data-doodle-id="major-28" />
+    <use href="#go-stones" transform="translate(713.1 119.5) rotate(30.1) scale(0.892) translate(-17 -17)" data-doodle="major" data-doodle-id="major-29" />
+    <use href="#bishop" transform="translate(24.6 345.3) rotate(-33.6) scale(1.006) translate(-15 -23)" data-doodle="major" data-doodle-id="major-30" />
+    <use href="#bishop" transform="translate(864.6 345.3) rotate(-33.6) scale(1.006) translate(-15 -23)" data-doodle="major" data-doodle-id="major-30" data-doodle-wrap="true" />
+    <use href="#rook" transform="translate(500.2 206.8) rotate(25.9) scale(1.014) translate(-18.5 -22)" data-doodle="major" data-doodle-id="major-31" />
+    <use href="#bishop" transform="translate(399.7 171.3) rotate(7.4) scale(1.053) translate(-15 -23)" data-doodle="major" data-doodle-id="major-32" />
+    <use href="#arrow-flow" transform="translate(229.3 60.5) rotate(-22.6) scale(0.964) translate(-25 -13)" data-doodle="major" data-doodle-id="major-33" />
+    <use href="#rook" transform="translate(147.5 477.4) rotate(-10.6) scale(0.847) translate(-18.5 -22)" data-doodle="major" data-doodle-id="major-34" />
+    <use href="#arrow-bend" transform="translate(589.0 489.4) rotate(-17.3) scale(0.986) translate(-22 -17)" data-doodle="major" data-doodle-id="major-35" />
+    <use href="#knight" transform="translate(196.6 307.3) rotate(-24.9) scale(0.888) translate(-20 -22)" data-doodle="major" data-doodle-id="major-36" />
+    <use href="#board-nine" transform="translate(770.8 0.6) rotate(-7.7) scale(1.045) translate(-14.5 -14.5)" data-doodle="major" data-doodle-id="major-37" />
+    <use href="#board-nine" transform="translate(770.8 520.6) rotate(-7.7) scale(1.045) translate(-14.5 -14.5)" data-doodle="major" data-doodle-id="major-37" data-doodle-wrap="true" />
+    <use href="#arrow-bend" transform="translate(169.0 202.1) rotate(10.3) scale(1.088) translate(-22 -17)" data-doodle="major" data-doodle-id="major-38" />
+    <use href="#pawn-chain" transform="translate(685.3 449.8) rotate(-4.0) scale(0.841) translate(-19 -20)" data-doodle="major" data-doodle-id="major-39" />
+    <use href="#bishop" transform="translate(144.5 402.9) rotate(-14.2) scale(0.904) translate(-15 -23)" data-doodle="major" data-doodle-id="major-40" />
+    <use href="#pawn" transform="translate(809.2 315.2) rotate(6.8) scale(0.863) translate(-15.5 -22.5)" data-doodle="major" data-doodle-id="major-41" />
+    <use href="#board-nine" transform="translate(639.7 63.0) rotate(21.7) scale(0.935) translate(-14.5 -14.5)" data-doodle="major" data-doodle-id="major-42" />
+    <use href="#bishop" transform="translate(776.8 116.1) rotate(22.3) scale(0.908) translate(-15 -23)" data-doodle="major" data-doodle-id="major-43" />
+    <use href="#board-four" transform="translate(732.0 358.6) rotate(2.7) scale(0.903) translate(-12.5 -12.5)" data-doodle="major" data-doodle-id="major-44" />
+    <use href="#pawn" transform="translate(67.1 400.3) rotate(28.5) scale(0.981) translate(-15.5 -22.5)" data-doodle="major" data-doodle-id="major-45" />
+    <use href="#knight" transform="translate(289.3 189.0) rotate(20.9) scale(1.146) translate(-20 -22)" data-doodle="major" data-doodle-id="major-46" />
+    <use href="#arrow-return" transform="translate(341.2 13.7) rotate(24.3) scale(0.984) translate(-18 -18)" data-doodle="major" data-doodle-id="major-47" />
+    <use href="#arrow-return" transform="translate(341.2 533.7) rotate(24.3) scale(0.984) translate(-18 -18)" data-doodle="major" data-doodle-id="major-47" data-doodle-wrap="true" />
+    <use href="#rook" transform="translate(437.8 457.1) rotate(20.0) scale(1.097) translate(-18.5 -22)" data-doodle="major" data-doodle-id="major-48" />
+    <use href="#pawn" transform="translate(757.4 185.6) rotate(1.2) scale(1.116) translate(-15.5 -22.5)" data-doodle="major" data-doodle-id="major-49" />
+    <use href="#knight" transform="translate(504.4 504.6) rotate(20.8) scale(0.912) translate(-20 -22)" data-doodle="major" data-doodle-id="major-50" />
+    <use href="#knight" transform="translate(504.4 -15.4) rotate(20.8) scale(0.912) translate(-20 -22)" data-doodle="major" data-doodle-id="major-50" data-doodle-wrap="true" />
+    <use href="#board-four" transform="translate(655.1 220.3) rotate(-7.0) scale(1.021) translate(-12.5 -12.5)" data-doodle="major" data-doodle-id="major-51" />
+    <use href="#knight" transform="translate(418.0 27.0) rotate(22.4) scale(1.123) translate(-20 -22)" data-doodle="major" data-doodle-id="major-52" />
+    <use href="#knight" transform="translate(418.0 547.0) rotate(22.4) scale(1.123) translate(-20 -22)" data-doodle="major" data-doodle-id="major-52" data-doodle-wrap="true" />
+    <use href="#rook" transform="translate(213.0 485.4) rotate(2.4) scale(0.929) translate(-18.5 -22)" data-doodle="major" data-doodle-id="major-53" />
+    <use href="#rook" transform="translate(740.2 57.0) rotate(-28.0) scale(1.097) translate(-18.5 -22)" data-doodle="major" data-doodle-id="major-54" />
+    <use href="#queen" transform="translate(502.7 403.2) rotate(-19.4) scale(0.911) translate(-14 -21)" data-doodle="major" data-doodle-id="major-55" />
+    <use href="#go-board" transform="translate(788.2 243.8) rotate(-1.8) scale(0.957) translate(-16.5 -16.5)" data-doodle="major" data-doodle-id="major-56" />
+    <use href="#rook" transform="translate(821.0 173.7) rotate(14.7) scale(0.866) translate(-18.5 -22)" data-doodle="major" data-doodle-id="major-57" />
+    <use href="#rook" transform="translate(-19.0 173.7) rotate(14.7) scale(0.866) translate(-18.5 -22)" data-doodle="major" data-doodle-id="major-57" data-doodle-wrap="true" />
+    <use href="#board-four" transform="translate(519.9 95.5) rotate(3.1) scale(0.935) translate(-12.5 -12.5)" data-doodle="major" data-doodle-id="major-58" />
+    <use href="#pawn" transform="translate(465.3 136.5) rotate(-20.4) scale(1.077) translate(-15.5 -22.5)" data-doodle="major" data-doodle-id="major-59" />
+    <use href="#king" transform="translate(129.8 277.0) rotate(-16.3) scale(0.853) translate(-15 -23)" data-doodle="major" data-doodle-id="major-60" />
+    <use href="#bishop" transform="translate(643.0 134.2) rotate(2.1) scale(1.034) translate(-15 -23)" data-doodle="major" data-doodle-id="major-61" />
+    <use href="#go-board" transform="translate(150.2 32.2) rotate(-16.7) scale(1.001) translate(-16.5 -16.5)" data-doodle="major" data-doodle-id="major-62" />
+    <use href="#knight" transform="translate(68.6 96.4) rotate(17.0) scale(1.012) translate(-20 -22)" data-doodle="major" data-doodle-id="major-63" />
+    <use href="#board-four" transform="translate(838.5 4.1) rotate(-13.5) scale(1.060) translate(-12.5 -12.5)" data-doodle="major" data-doodle-id="major-64" />
+    <use href="#board-four" transform="translate(838.5 524.1) rotate(-13.5) scale(1.060) translate(-12.5 -12.5)" data-doodle="major" data-doodle-id="major-64" data-doodle-wrap="true" />
+    <use href="#board-four" transform="translate(-1.5 4.1) rotate(-13.5) scale(1.060) translate(-12.5 -12.5)" data-doodle="major" data-doodle-id="major-64" data-doodle-wrap="true" />
+    <use href="#board-four" transform="translate(-1.5 524.1) rotate(-13.5) scale(1.060) translate(-12.5 -12.5)" data-doodle="major" data-doodle-id="major-64" data-doodle-wrap="true" />
+    <use href="#pawn-chain" transform="translate(620.3 279.7) rotate(-1.0) scale(0.949) translate(-19 -20)" data-doodle="major" data-doodle-id="major-65" />
+    <use href="#queen" transform="translate(383.3 361.4) rotate(-33.1) scale(0.975) translate(-14 -21)" data-doodle="major" data-doodle-id="major-66" />
+    <use href="#knight" transform="translate(240.4 249.8) rotate(14.7) scale(1.082) translate(-20 -22)" data-doodle="major" data-doodle-id="major-67" />
+    <use href="#cross" transform="translate(51.8 144.7) rotate(-12.5) scale(0.948) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-68" />
+    <use href="#cross" transform="translate(31.9 159.3) rotate(0.9) scale(0.683) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-69" />
+    <use href="#ring" transform="translate(529.9 423.8) rotate(-33.2) scale(0.661) translate(0 0)" data-doodle="accent" data-doodle-id="accent-70" />
+    <use href="#cross" transform="translate(689.6 59.3) rotate(-24.7) scale(0.765) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-71" />
+    <use href="#dot" transform="translate(70.8 225.7) rotate(-29.9) scale(1.015) translate(0 0)" data-doodle="accent" data-doodle-id="accent-72" />
+    <use href="#arc" transform="translate(455.5 229.9) rotate(42.7) scale(0.665) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-73" />
+    <use href="#cross" transform="translate(420.9 244.6) rotate(7.9) scale(0.920) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-74" />
+    <use href="#cross" transform="translate(385.0 92.2) rotate(-19.5) scale(0.945) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-75" />
+    <use href="#dash-pair" transform="translate(173.5 9.5) rotate(3.5) scale(0.654) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-76" />
+    <use href="#dot" transform="translate(154.4 233.6) rotate(-11.7) scale(0.861) translate(0 0)" data-doodle="accent" data-doodle-id="accent-77" />
+    <use href="#ring" transform="translate(813.5 492.9) rotate(48.4) scale(1.050) translate(0 0)" data-doodle="accent" data-doodle-id="accent-78" />
+    <use href="#dot" transform="translate(443.4 497.7) rotate(73.7) scale(0.826) translate(0 0)" data-doodle="accent" data-doodle-id="accent-79" />
+    <use href="#cross" transform="translate(736.3 334.6) rotate(-43.1) scale(0.711) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-80" />
+    <use href="#dot" transform="translate(607.1 351.3) rotate(-61.9) scale(0.967) translate(0 0)" data-doodle="accent" data-doodle-id="accent-81" />
+    <use href="#cross" transform="translate(585.5 83.0) rotate(-20.6) scale(0.859) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-82" />
+    <use href="#ring" transform="translate(790.8 455.1) rotate(-57.7) scale(0.995) translate(0 0)" data-doodle="accent" data-doodle-id="accent-83" />
+    <use href="#cross" transform="translate(509.1 55.1) rotate(41.7) scale(0.759) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-84" />
+    <use href="#spark" transform="translate(255.8 323.8) rotate(21.8) scale(0.876) translate(-7 -2)" data-doodle="accent" data-doodle-id="accent-85" />
+    <use href="#spiral" transform="translate(468.7 402.1) rotate(62.3) scale(0.612) translate(-8 -8)" data-doodle="accent" data-doodle-id="accent-86" />
+    <use href="#ring" transform="translate(635.8 499.4) rotate(44.8) scale(1.003) translate(0 0)" data-doodle="accent" data-doodle-id="accent-87" />
+    <use href="#arc" transform="translate(185.5 246.3) rotate(75.0) scale(1.001) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-88" />
+    <use href="#arc" transform="translate(267.1 375.8) rotate(21.6) scale(0.712) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-89" />
+    <use href="#dot" transform="translate(548.8 98.8) rotate(53.8) scale(0.857) translate(0 0)" data-doodle="accent" data-doodle-id="accent-90" />
+    <use href="#dot" transform="translate(44.1 490.4) rotate(49.5) scale(0.744) translate(0 0)" data-doodle="accent" data-doodle-id="accent-91" />
+    <use href="#dot" transform="translate(480.5 57.2) rotate(67.0) scale(0.942) translate(0 0)" data-doodle="accent" data-doodle-id="accent-92" />
+    <use href="#cross" transform="translate(190.5 448.9) rotate(-35.1) scale(0.977) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-93" />
+    <use href="#star" transform="translate(312.3 458.8) rotate(28.2) scale(0.755) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-94" />
+    <use href="#ring" transform="translate(738.0 274.4) rotate(-31.8) scale(0.990) translate(0 0)" data-doodle="accent" data-doodle-id="accent-95" />
+    <use href="#ring" transform="translate(334.5 231.9) rotate(-44.8) scale(0.899) translate(0 0)" data-doodle="accent" data-doodle-id="accent-96" />
+    <use href="#spark" transform="translate(105.9 328.8) rotate(-42.7) scale(0.993) translate(-7 -2)" data-doodle="accent" data-doodle-id="accent-97" />
+    <use href="#star" transform="translate(355.7 306.5) rotate(-0.4) scale(0.895) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-98" />
+    <use href="#cross" transform="translate(318.5 380.8) rotate(-20.0) scale(0.685) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-99" />
+    <use href="#star" transform="translate(571.6 434.3) rotate(34.6) scale(0.953) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-100" />
+    <use href="#dot" transform="translate(761.3 460.8) rotate(-68.2) scale(0.929) translate(0 0)" data-doodle="accent" data-doodle-id="accent-101" />
+    <use href="#cross" transform="translate(654.5 301.3) rotate(61.5) scale(0.620) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-102" />
+    <use href="#spiral" transform="translate(682.5 75.7) rotate(-69.7) scale(0.950) translate(-8 -8)" data-doodle="accent" data-doodle-id="accent-103" />
+    <use href="#dash-pair" transform="translate(625.0 395.6) rotate(28.9) scale(0.866) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-104" />
+    <use href="#cross" transform="translate(427.7 107.2) rotate(36.4) scale(0.621) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-105" />
+    <use href="#dot" transform="translate(474.7 348.8) rotate(32.8) scale(1.020) translate(0 0)" data-doodle="accent" data-doodle-id="accent-106" />
+    <use href="#dash-pair" transform="translate(780.2 294.5) rotate(51.3) scale(0.824) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-107" />
+    <use href="#dash-pair" transform="translate(51.4 5.7) rotate(48.8) scale(0.737) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-108" />
+    <use href="#dot" transform="translate(535.2 10.1) rotate(-69.4) scale(0.599) translate(0 0)" data-doodle="accent" data-doodle-id="accent-109" />
+    <use href="#dash-pair" transform="translate(321.6 336.3) rotate(-14.9) scale(0.689) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-110" />
+    <use href="#spiral" transform="translate(355.5 49.7) rotate(-21.1) scale(0.789) translate(-8 -8)" data-doodle="accent" data-doodle-id="accent-111" />
+    <use href="#star" transform="translate(749.5 474.4) rotate(12.5) scale(0.752) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-112" />
+    <use href="#ring" transform="translate(681.0 141.2) rotate(64.3) scale(0.990) translate(0 0)" data-doodle="accent" data-doodle-id="accent-113" />
+    <use href="#dot" transform="translate(113.8 127.4) rotate(67.7) scale(0.959) translate(0 0)" data-doodle="accent" data-doodle-id="accent-114" />
+    <use href="#star" transform="translate(787.3 62.4) rotate(41.8) scale(0.873) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-115" />
+    <use href="#dash-pair" transform="translate(585.9 137.5) rotate(5.4) scale(0.931) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-116" />
+    <use href="#spark" transform="translate(27.9 283.0) rotate(-21.5) scale(1.045) translate(-7 -2)" data-doodle="accent" data-doodle-id="accent-117" />
+    <use href="#ring" transform="translate(765.3 488.5) rotate(-51.2) scale(0.689) translate(0 0)" data-doodle="accent" data-doodle-id="accent-118" />
+    <use href="#ring" transform="translate(598.0 110.6) rotate(22.1) scale(0.914) translate(0 0)" data-doodle="accent" data-doodle-id="accent-119" />
+    <use href="#dot" transform="translate(103.4 76.7) rotate(-48.3) scale(0.599) translate(0 0)" data-doodle="accent" data-doodle-id="accent-120" />
+    <use href="#dot" transform="translate(504.6 273.6) rotate(-64.2) scale(0.732) translate(0 0)" data-doodle="accent" data-doodle-id="accent-121" />
+    <use href="#star" transform="translate(373.2 136.2) rotate(-33.8) scale(0.842) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-122" />
+    <use href="#cross" transform="translate(676.9 30.6) rotate(2.2) scale(0.900) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-123" />
+    <use href="#star" transform="translate(534.4 163.6) rotate(4.8) scale(0.850) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-124" />
+    <use href="#dash-pair" transform="translate(174.7 366.9) rotate(39.0) scale(1.013) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-125" />
+    <use href="#ring" transform="translate(73.9 25.6) rotate(-51.0) scale(1.018) translate(0 0)" data-doodle="accent" data-doodle-id="accent-126" />
+    <use href="#arc" transform="translate(545.8 138.5) rotate(-64.2) scale(0.894) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-127" />
+    <use href="#ring" transform="translate(214.5 7.8) rotate(-42.1) scale(0.930) translate(0 0)" data-doodle="accent" data-doodle-id="accent-128" />
+    <use href="#cross" transform="translate(88.5 232.4) rotate(64.7) scale(0.999) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-129" />
+    <use href="#arc" transform="translate(24.6 92.7) rotate(4.6) scale(0.878) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-130" />
+    <use href="#dot" transform="translate(106.2 224.1) rotate(-24.2) scale(1.012) translate(0 0)" data-doodle="accent" data-doodle-id="accent-131" />
+    <use href="#dot" transform="translate(248.9 477.8) rotate(34.7) scale(0.774) translate(0 0)" data-doodle="accent" data-doodle-id="accent-132" />
+    <use href="#dot" transform="translate(653.5 36.7) rotate(62.4) scale(0.849) translate(0 0)" data-doodle="accent" data-doodle-id="accent-133" />
+    <use href="#dot" transform="translate(322.1 157.7) rotate(-6.5) scale(0.700) translate(0 0)" data-doodle="accent" data-doodle-id="accent-134" />
+    <use href="#arc" transform="translate(509.6 139.8) rotate(-57.6) scale(0.822) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-135" />
+    <use href="#dot" transform="translate(286.9 125.2) rotate(-30.5) scale(0.737) translate(0 0)" data-doodle="accent" data-doodle-id="accent-136" />
+    <use href="#spark" transform="translate(719.5 153.1) rotate(29.0) scale(0.789) translate(-7 -2)" data-doodle="accent" data-doodle-id="accent-137" />
+    <use href="#star" transform="translate(587.3 338.3) rotate(-68.6) scale(0.885) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-138" />
+    <use href="#cross" transform="translate(82.6 54.0) rotate(14.6) scale(0.829) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-139" />
+    <use href="#dot" transform="translate(129.1 335.0) rotate(71.5) scale(0.944) translate(0 0)" data-doodle="accent" data-doodle-id="accent-140" />
+    <use href="#spiral" transform="translate(727.2 239.2) rotate(72.3) scale(0.853) translate(-8 -8)" data-doodle="accent" data-doodle-id="accent-141" />
+    <use href="#dot" transform="translate(119.9 147.5) rotate(-54.2) scale(0.710) translate(0 0)" data-doodle="accent" data-doodle-id="accent-142" />
+    <use href="#dot" transform="translate(300.7 512.6) rotate(20.1) scale(0.640) translate(0 0)" data-doodle="accent" data-doodle-id="accent-143" />
+    <use href="#cross" transform="translate(209.8 208.1) rotate(50.3) scale(0.672) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-144" />
+    <use href="#arc" transform="translate(549.5 85.9) rotate(-67.3) scale(0.736) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-145" />
+    <use href="#dash-pair" transform="translate(540.5 390.5) rotate(-5.8) scale(0.985) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-146" />
+    <use href="#cross" transform="translate(701.3 219.8) rotate(53.4) scale(0.902) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-147" />
+    <use href="#spark" transform="translate(168.0 340.9) rotate(-37.6) scale(0.778) translate(-7 -2)" data-doodle="accent" data-doodle-id="accent-148" />
+    <use href="#arc" transform="translate(456.4 305.9) rotate(11.1) scale(0.701) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-149" />
+    <use href="#arc" transform="translate(65.4 48.9) rotate(-54.0) scale(0.952) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-150" />
+    <use href="#star" transform="translate(513.3 349.3) rotate(-43.0) scale(0.735) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-151" />
+    <use href="#cross" transform="translate(36.8 423.6) rotate(-16.7) scale(0.951) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-152" />
+    <use href="#spiral" transform="translate(814.8 441.4) rotate(-45.3) scale(0.757) translate(-8 -8)" data-doodle="accent" data-doodle-id="accent-153" />
+    <use href="#cross" transform="translate(634.0 31.6) rotate(-30.8) scale(0.667) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-154" />
+    <use href="#dot" transform="translate(331.9 176.6) rotate(13.7) scale(0.663) translate(0 0)" data-doodle="accent" data-doodle-id="accent-155" />
+    <use href="#spiral" transform="translate(127.5 202.9) rotate(-11.5) scale(0.832) translate(-8 -8)" data-doodle="accent" data-doodle-id="accent-156" />
+    <use href="#cross" transform="translate(766.3 361.1) rotate(-55.2) scale(1.026) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-157" />
+    <use href="#dot" transform="translate(424.3 415.8) rotate(-51.0) scale(0.961) translate(0 0)" data-doodle="accent" data-doodle-id="accent-158" />
+    <use href="#cross" transform="translate(18.5 505.1) rotate(-55.1) scale(0.846) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-159" />
+    <use href="#star" transform="translate(481.8 438.6) rotate(-28.3) scale(0.824) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-160" />
+    <use href="#star" transform="translate(260.0 407.2) rotate(-0.8) scale(0.613) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-161" />
+    <use href="#arc" transform="translate(757.4 315.6) rotate(28.0) scale(0.951) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-162" />
+    <use href="#ring" transform="translate(315.2 511.3) rotate(-43.2) scale(0.624) translate(0 0)" data-doodle="accent" data-doodle-id="accent-163" />
+    <use href="#dot" transform="translate(718.2 389.8) rotate(10.4) scale(0.600) translate(0 0)" data-doodle="accent" data-doodle-id="accent-164" />
+    <use href="#arc" transform="translate(606.1 96.7) rotate(43.4) scale(0.653) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-165" />
+    <use href="#cross" transform="translate(419.5 399.6) rotate(32.8) scale(0.967) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-166" />
+    <use href="#dash-pair" transform="translate(442.1 403.9) rotate(-70.4) scale(1.002) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-167" />
+    <use href="#star" transform="translate(274.9 102.6) rotate(-66.0) scale(0.785) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-168" />
+    <use href="#spark" transform="translate(122.9 168.1) rotate(47.3) scale(0.809) translate(-7 -2)" data-doodle="accent" data-doodle-id="accent-169" />
+    <use href="#dot" transform="translate(17.7 180.2) rotate(-60.4) scale(0.685) translate(0 0)" data-doodle="accent" data-doodle-id="accent-170" />
+    <use href="#dot" transform="translate(540.3 501.2) rotate(-59.8) scale(1.006) translate(0 0)" data-doodle="accent" data-doodle-id="accent-171" />
+    <use href="#spiral" transform="translate(292.1 477.7) rotate(-8.2) scale(0.605) translate(-8 -8)" data-doodle="accent" data-doodle-id="accent-172" />
+    <use href="#spark" transform="translate(476.5 85.0) rotate(-22.8) scale(0.921) translate(-7 -2)" data-doodle="accent" data-doodle-id="accent-173" />
+    <use href="#cross" transform="translate(522.0 134.7) rotate(19.9) scale(0.721) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-174" />
+    <use href="#spiral" transform="translate(641.4 337.5) rotate(71.8) scale(0.714) translate(-8 -8)" data-doodle="accent" data-doodle-id="accent-175" />
+    <use href="#cross" transform="translate(825.1 353.6) rotate(65.0) scale(0.649) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-176" />
+    <use href="#arc" transform="translate(238.3 422.3) rotate(-9.7) scale(0.783) translate(-7 -3)" data-doodle="accent" data-doodle-id="accent-177" />
+    <use href="#spiral" transform="translate(370.9 17.4) rotate(4.5) scale(0.588) translate(-8 -8)" data-doodle="accent" data-doodle-id="accent-178" />
+    <use href="#ring" transform="translate(242.7 347.3) rotate(-32.2) scale(0.661) translate(0 0)" data-doodle="accent" data-doodle-id="accent-179" />
+    <use href="#star" transform="translate(146.0 324.3) rotate(46.3) scale(0.604) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-180" />
+    <use href="#ring" transform="translate(248.8 444.1) rotate(-3.9) scale(0.932) translate(0 0)" data-doodle="accent" data-doodle-id="accent-181" />
+    <use href="#dash-pair" transform="translate(120.5 117.6) rotate(69.1) scale(0.679) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-182" />
+    <use href="#cross" transform="translate(278.2 270.9) rotate(33.7) scale(0.747) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-183" />
+    <use href="#dash-pair" transform="translate(757.7 290.3) rotate(-63.3) scale(0.873) translate(-5.5 -2.5)" data-doodle="accent" data-doodle-id="accent-184" />
+    <use href="#cross" transform="translate(123.9 368.3) rotate(48.0) scale(0.955) translate(-2 -2)" data-doodle="accent" data-doodle-id="accent-185" />
+    <use href="#star" transform="translate(557.0 118.9) rotate(0.2) scale(0.785) translate(-12 -12)" data-doodle="accent" data-doodle-id="accent-186" />
+    <use href="#spiral" transform="translate(414.0 264.7) rotate(62.1) scale(0.919) translate(-8 -8)" data-doodle="accent" data-doodle-id="accent-187" />
+  </g>
+</svg>

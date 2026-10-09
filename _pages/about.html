@@ -174,10 +174,35 @@ footer {
 }
 
 /* publication styling */
+html {
+    background: #ececea;
+}
+
 body {
+    background: #ececea;
+    isolation: isolate;
+    position: relative;
+    min-height: 100vh;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: #6f8563;
+    -webkit-mask: url('/assets/chess-wallpaper.svg') repeat 0 0 / 560px auto;
+    mask: url('/assets/chess-wallpaper.svg') repeat 0 0 / 560px auto;
+    opacity: 0.1656;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.pub-thumb.pub-thumb--caddie {
+    background-size: contain !important;
+    background-repeat: no-repeat;
 }
 
 .pub-title {
@@ -426,6 +451,27 @@ body {
 </div>
 
 <div class="publications">
+  <div class="pub-entry" id="caddie">
+    <div class="pub-thumb pub-thumb--caddie" style="background-image: url('/assets/thumb-caddie.png');" role="img" aria-label="Caddie training and inference overview"></div>
+    <div class="pub-content">
+      <strong class="pub-title">Training Advisors for LLM Agents from Task Outcomes</strong>
+      <span class="pub-authors">Sergei Polezhaev, Barys Liskavets, <u>Ori Press</u>, Alexander Golubev</span>
+      <em class="pub-conf">Preprint 2026</em>
+      <div class="pub-links">
+        <a class="pub-button" href="https://arxiv.org/abs/2610.09858">Paper</a>
+        <a class="pub-button bibtex-link" role="button" tabindex="0" onclick="toggleBibtex('bibtex-caddie')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleBibtex('bibtex-caddie'); }">Bibtex</a>
+      </div>
+      <div id="bibtex-caddie" class="bibtex-block">@misc{polezhaev2026training,
+  title={Training Advisors for {LLM} Agents from Task Outcomes},
+  author={Sergei Polezhaev and Barys Liskavets and Ori Press and Alexander Golubev},
+  year={2026},
+  eprint={2610.09858},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2610.09858}
+}</div>
+    </div>
+  </div>
   <div class="pub-entry">
     <div class="pub-thumb" style="background-image: url('/assets/thumb-algotune.png');"></div>
     <div class="pub-content">
