@@ -76,6 +76,8 @@ footer {
 /* Bio section */
 .bio-text {
     flex: 1;
+    min-width: 0;
+    padding: 22px 24px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 17px;
     line-height: 1.7;
@@ -119,6 +121,7 @@ footer {
     align-items: center;
     gap: 30px;
     margin: 25px 0 0;
+    padding: 12px;
 }
 
 .social-icon {
@@ -200,9 +203,12 @@ body::before {
     z-index: -1;
 }
 
-.pub-thumb.pub-thumb--caddie {
-    background-size: contain !important;
-    background-repeat: no-repeat;
+.bio-text,
+.social-icons-container,
+.pub-entry {
+    background: #f7f7f5;
+    border: 1.5px solid #c3c2bb;
+    border-radius: 18px;
 }
 
 .pub-title {
@@ -265,9 +271,11 @@ body::before {
     align-items: flex-start !important;
     gap: 20px !important;
     margin-bottom: 2em !important;
+    padding: 20px;
 }
 
 .pub-content {
+    min-width: 0;
     display: flex !important;
     flex-direction: column !important;
     gap: 0.14em !important;
@@ -379,7 +387,7 @@ body::before {
     .pub-entry {
         flex-direction: column;
         margin-bottom: 3.3em !important;
-        padding: 0 8px;
+        padding: 20px 16px;
     }
 
     .pub-thumb {
@@ -452,7 +460,7 @@ body::before {
 
 <div class="publications">
   <div class="pub-entry" id="caddie">
-    <div class="pub-thumb pub-thumb--caddie" style="background-image: url('/assets/thumb-caddie.png');" role="img" aria-label="Caddie training and inference overview"></div>
+    <div class="pub-thumb" style="background-image: url('/assets/thumb-caddie.png');" role="img" aria-label="Caddie training and inference overview"></div>
     <div class="pub-content">
       <strong class="pub-title">Training Advisors for LLM Agents from Task Outcomes</strong>
       <span class="pub-authors">Sergei Polezhaev, Barys Liskavets, <u>Ori Press</u>, Alexander Golubev</span>
