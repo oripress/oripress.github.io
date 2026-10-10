@@ -84,6 +84,25 @@ footer {
     font-weight: 400;
 }
 
+.bio-text .bio-name {
+    margin: 0 0 12px;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+
+.bio-text .bio-intro {
+    font-size: 19px;
+}
+
+.bio-text .bio-name + p {
+    margin-top: 0;
+}
+
 .bio-text p {
     margin-bottom: 1em;
 }
@@ -357,6 +376,10 @@ body::before {
         order: 2;
     }
 
+    .bio-text .bio-name {
+        font-size: 28px;
+    }
+
     .profile-column {
         order: 1;
         width: 100%;
@@ -430,8 +453,9 @@ body::before {
 <!-- Hero Section -->
 <div class="hero-section">
   <div class="bio-text">
+    <h1 class="bio-name">Ori Press</h1>
     <p>
-      Hi, I'm Ori! I'm an ML Researcher at <a href="https://nebius.com/">Nebius</a>.
+      <span class="bio-intro">Hi, I'm Ori! I'm an ML Researcher at <a href="https://nebius.com/">Nebius</a>.</span>
       I'm interested in helping AI systems develop novel algorithms for hard problems.
     </p>
 
