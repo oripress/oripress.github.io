@@ -245,16 +245,15 @@ body::before {
 }
 
 .pub-conf {
-    display: inline-block;
+    display: block;
     align-self: flex-start;
-    line-height: 1.1;
+    line-height: 1.4;
     margin-bottom: 0.35em;
-    padding: 0.12em 0.6em;
-    border-radius: 999px;
-    background: #000;
-    color: #fff;
-    font-size: 0.9em;
-    font-weight: 500;
+    color: #52644c;
+    font-size: 0.85em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.025em;
 }
 
 .pub-authors {
@@ -264,8 +263,9 @@ body::before {
     margin-bottom: 0.35em;
 }
 
-.pub-authors u {
-    text-decoration: underline;
+.pub-author-self {
+    color: #263b55;
+    font-weight: 600;
 }
 /* Publications section */
 .publications {
@@ -317,25 +317,52 @@ body::before {
 }
 
 .pub-links {
-    margin: 0.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35em 0;
+    margin: 0.35em 0 0;
+    font-size: 0.9em;
+    line-height: 1.5;
 }
 
-.pub-button {
-    display: inline-block;
-    padding: 0.2em 0.5em;
-    margin-right: 0.25em;
-    margin-bottom: 0.25em;
-    border: 1px solid #000;
-    background-color: #fff;
-    color: #000;
+.pub-link-item {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.pub-link-separator {
+    margin: 0 0.55em;
+    color: #929a95;
+}
+
+.pub-link,
+.pub-link:visited {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    color: #183d68;
+    font: inherit;
     text-decoration: none !important;
     text-transform: lowercase;
-    font-size: 0.9em;
+    cursor: pointer;
 }
 
-.pub-button:hover {
-    background-color: #f0f0f0;
-    text-decoration: none !important;
+.pub-link:hover,
+.pub-link:focus-visible {
+    background: none;
+    color: #102e50;
+    text-decoration: underline !important;
+    text-underline-offset: 0.18em;
+}
+
+.pub-link:focus-visible {
+    outline: 2px solid #183d68;
+    outline-offset: 3px;
 }
 
 
@@ -392,19 +419,6 @@ body::before {
         box-shadow: none !important;
         opacity: 1 !important;
         outline: none !important;
-    }
-
-    .pub-links {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        gap: 0.5em !important;
-        margin: 0.5em 0 !important;
-    }
-
-    .pub-button {
-        margin-right: 0 !important;
-        margin-bottom: 0.5em !important;
-        flex-shrink: 0 !important;
     }
 
     .pub-entry {

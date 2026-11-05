@@ -12,13 +12,11 @@ redirect_from:
 ---
 
 <script>
-function toggleBibtex(id) {
-    const element = document.getElementById(id);
-    if (element.style.display === "none" || element.style.display === "") {
-        element.style.display = "block";
-    } else {
-        element.style.display = "none";
-    }
+function toggleBibtex(trigger) {
+    const element = document.getElementById(trigger.getAttribute("aria-controls"));
+    const expanded = trigger.getAttribute("aria-expanded") === "true";
+    element.style.display = expanded ? "none" : "block";
+    trigger.setAttribute("aria-expanded", String(!expanded));
 }
 </script>
 
@@ -83,13 +81,13 @@ function toggleBibtex(id) {
     <div class="pub-thumb" style="background-image: url('/assets/thumb-binprop.png');" role="img" aria-label="BinProp chess move explanations"></div>
     <div class="pub-content">
       <strong class="pub-title">Explaining Chess and Go in Natural Language</strong>
-      <span class="pub-authors"><u>Ori Press</u>, Alexander Golubev</span>
-      <em class="pub-conf">Preprint 2026</em>
+      <span class="pub-authors"><strong class="pub-author-self">Ori Press</strong>, Alexander Golubev</span>
+      <span class="pub-conf">Preprint 2026</span>
       <div class="pub-links">
-        <a class="pub-button" href="https://arxiv.org/abs/2610.23166">Paper</a>
-        <a class="pub-button" href="https://www.explainthatmove.com/">Website</a>
-        <a class="pub-button" href="https://github.com/oripress/BinProp">Code</a>
-        <a class="pub-button bibtex-link" role="button" tabindex="0" onclick="toggleBibtex('bibtex-binprop')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleBibtex('bibtex-binprop'); }">Bibtex</a>
+        <span class="pub-link-item"><a class="pub-link" href="https://arxiv.org/abs/2610.23166">Paper</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://www.explainthatmove.com/">Website</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://github.com/oripress/BinProp">Code</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><button type="button" class="pub-link bibtex-link" aria-expanded="false" aria-controls="bibtex-binprop" onclick="toggleBibtex(this)">Bibtex</button></span>
       </div>
       <div id="bibtex-binprop" class="bibtex-block">@misc{press2026explaining,
   title={Explaining Chess and Go in Natural Language},
@@ -106,11 +104,11 @@ function toggleBibtex(id) {
     <div class="pub-thumb" style="background-image: url('/assets/thumb-caddie.png');" role="img" aria-label="Caddie training and inference overview"></div>
     <div class="pub-content">
       <strong class="pub-title">Training Advisors for LLM Agents from Task Outcomes</strong>
-      <span class="pub-authors">Sergei Polezhaev, Barys Liskavets, <u>Ori Press</u>, Alexander Golubev</span>
-      <em class="pub-conf">Preprint 2026</em>
+      <span class="pub-authors">Sergei Polezhaev, Barys Liskavets, <strong class="pub-author-self">Ori Press</strong>, Alexander Golubev</span>
+      <span class="pub-conf">Preprint 2026</span>
       <div class="pub-links">
-        <a class="pub-button" href="https://arxiv.org/abs/2610.09858">Paper</a>
-        <a class="pub-button bibtex-link" role="button" tabindex="0" onclick="toggleBibtex('bibtex-caddie')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleBibtex('bibtex-caddie'); }">Bibtex</a>
+        <span class="pub-link-item"><a class="pub-link" href="https://arxiv.org/abs/2610.09858">Paper</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><button type="button" class="pub-link bibtex-link" aria-expanded="false" aria-controls="bibtex-caddie" onclick="toggleBibtex(this)">Bibtex</button></span>
       </div>
       <div id="bibtex-caddie" class="bibtex-block">@misc{polezhaev2026training,
   title={Training Advisors for {LLM} Agents from Task Outcomes},
@@ -127,16 +125,16 @@ function toggleBibtex(id) {
     <div class="pub-thumb" style="background-image: url('/assets/thumb-algotune.png');"></div>
     <div class="pub-content">
       <strong class="pub-title">AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs?</strong>
-      <span class="pub-authors"><u>Ori Press</u>, Brandon Amos, Haoyu Zhao, Yikai Wu, Samuel Ainsworth, Dominik Krupke, Patrick Kidger, Touqir Sajed, Bartolomeo Stellato, Jisun Park, Nathanael Bosch, Eli Meril, Albert Steppi, Arman Zharmagambetov, Fangzhao Zhang, David Pérez–Piñeiro, Alberto Mercurio, Ni Zhan, Talor Abramovich, Kilian Lieret, Hanlin Zhang, Shirley Huang, Matthias Bethge, Ofir Press</span>
-      <em class="pub-conf">NeurIPS 2025</em>
+      <span class="pub-authors"><strong class="pub-author-self">Ori Press</strong>, Brandon Amos, Haoyu Zhao, Yikai Wu, Samuel Ainsworth, Dominik Krupke, Patrick Kidger, Touqir Sajed, Bartolomeo Stellato, Jisun Park, Nathanael Bosch, Eli Meril, Albert Steppi, Arman Zharmagambetov, Fangzhao Zhang, David Pérez–Piñeiro, Alberto Mercurio, Ni Zhan, Talor Abramovich, Kilian Lieret, Hanlin Zhang, Shirley Huang, Matthias Bethge, Ofir Press</span>
+      <span class="pub-conf">NeurIPS 2025</span>
       <div class="pub-links">
-        <a class="pub-button" href="https://www.arxiv.org/abs/2507.15887">Paper</a>
-        <a class="pub-button" href="https://www.algotune.io">Website</a>
-        <a class="pub-button" href="https://github.com/oripress/AlgoTune">Code</a>
-        <a class="pub-button" href="https://huggingface.co/datasets/oripress/AlgoTune">Dataset</a>
-        <a class="pub-button" href="https://github.com/scipy/scipy/pull/23786">AlgoTuner SciPy PR</a>
-        <a class="pub-button" href="https://github.com/networkx/networkx/pull/8296">AlgoTuner NetworkX PR</a>
-        <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-algotune')">Bibtex</a>
+        <span class="pub-link-item"><a class="pub-link" href="https://www.arxiv.org/abs/2507.15887">Paper</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://www.algotune.io">Website</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://github.com/oripress/AlgoTune">Code</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://huggingface.co/datasets/oripress/AlgoTune">Dataset</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://github.com/scipy/scipy/pull/23786">AlgoTuner SciPy PR</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://github.com/networkx/networkx/pull/8296">AlgoTuner NetworkX PR</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><button type="button" class="pub-link bibtex-link" aria-expanded="false" aria-controls="bibtex-algotune" onclick="toggleBibtex(this)">Bibtex</button></span>
       </div>
       <div id="bibtex-algotune" class="bibtex-block">@article{press2025algotune,
   title={AlgoTune: Can Language Models Speed Up General-Purpose Numerical Programs?},
@@ -150,12 +148,12 @@ function toggleBibtex(id) {
     <div class="pub-thumb" style="background-image: url('/assets/thumb-humanitysexam.png');"></div>
     <div class="pub-content">
       <strong class="pub-title">Humanity's Last Exam</strong>
-      <span class="pub-authors">Long Phan, Alice Gatti, Ziwen Han, …, <u>Ori Press</u>, … <em>(contributed 6 questions, 1 in the top 550)</em></span>
-      <em class="pub-conf">Nature 2026</em>
+      <span class="pub-authors">Long Phan, Alice Gatti, Ziwen Han, …, <strong class="pub-author-self">Ori Press</strong>, … <em>(contributed 6 questions, 1 in the top 550)</em></span>
+      <span class="pub-conf">Nature 2026</span>
       <div class="pub-links">
-        <a class="pub-button" href="https://arxiv.org/abs/2501.14249">Paper</a>
-        <a class="pub-button" href="https://agi.safe.ai/">Website</a>
-        <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-humanitysexam')">Bibtex</a>
+        <span class="pub-link-item"><a class="pub-link" href="https://arxiv.org/abs/2501.14249">Paper</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://agi.safe.ai/">Website</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><button type="button" class="pub-link bibtex-link" aria-expanded="false" aria-controls="bibtex-humanitysexam" onclick="toggleBibtex(this)">Bibtex</button></span>
       </div>
 <div id="bibtex-humanitysexam" class="bibtex-block">@misc{phan2025humanitysexam,
   title={Humanity's Last Exam},
@@ -172,12 +170,12 @@ function toggleBibtex(id) {
     <div class="pub-thumb" style="background-image: url('/assets/thumb-swebench.png');"></div>
     <div class="pub-content">
       <strong class="pub-title">SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?</strong>
-      <span class="pub-authors">John Yang*, Carlos E. Jimenez*, Alex L. Zhang, Kilian Lieret, Joyce Yang, Xindi Wu, <u>Ori Press</u>, Niklas Muennighoff, Gabriel Synnaeve, Karthik Narasimhan, Diyi Yang, Sida I. Wang, Ofir Press</span>
-      <em class="pub-conf">ICLR 2025</em>
+      <span class="pub-authors">John Yang*, Carlos E. Jimenez*, Alex L. Zhang, Kilian Lieret, Joyce Yang, Xindi Wu, <strong class="pub-author-self">Ori Press</strong>, Niklas Muennighoff, Gabriel Synnaeve, Karthik Narasimhan, Diyi Yang, Sida I. Wang, Ofir Press</span>
+      <span class="pub-conf">ICLR 2025</span>
       <div class="pub-links">
-        <a class="pub-button" href="https://arxiv.org/abs/2410.03859">Paper</a>
-        <a class="pub-button" href="https://www.swebench.com/multimodal">Website</a>
-        <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-swebench')">Bibtex</a>
+        <span class="pub-link-item"><a class="pub-link" href="https://arxiv.org/abs/2410.03859">Paper</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://www.swebench.com/multimodal">Website</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><button type="button" class="pub-link bibtex-link" aria-expanded="false" aria-controls="bibtex-swebench" onclick="toggleBibtex(this)">Bibtex</button></span>
       </div>
 <div id="bibtex-swebench" class="bibtex-block">@inproceedings{yang2025swebench,
     title={SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?},
@@ -192,13 +190,13 @@ function toggleBibtex(id) {
     <div class="pub-thumb" style="background-image: url('/assets/thumb-citeme.png');"></div>
     <div class="pub-content">
       <strong class="pub-title">CiteME: Can Language Models Accurately Cite Scientific Claims?</strong>
-      <span class="pub-authors"><u>Ori Press</u>*, Andreas Hochlehnert*, Ameya Prabhu, Vishaal Udandarao, Ofir Press‡, Matthias Bethge‡ (*/‡ shared first/last authorship)</span>
-      <em class="pub-conf">NeurIPS 2024</em>
+      <span class="pub-authors"><strong class="pub-author-self">Ori Press</strong>*, Andreas Hochlehnert*, Ameya Prabhu, Vishaal Udandarao, Ofir Press‡, Matthias Bethge‡ (*/‡ shared first/last authorship)</span>
+      <span class="pub-conf">NeurIPS 2024</span>
       <div class="pub-links">
-        <a class="pub-button" href="https://arxiv.org/pdf/2407.12861">Paper</a>
-        <a class="pub-button" href="https://bethgelab.github.io/CiteME/">Website</a>
-        <a class="pub-button" href="https://github.com/bethgelab/CiteME/">Code</a>
-        <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-citeme')">Bibtex</a>
+        <span class="pub-link-item"><a class="pub-link" href="https://arxiv.org/pdf/2407.12861">Paper</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://bethgelab.github.io/CiteME/">Website</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://github.com/bethgelab/CiteME/">Code</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><button type="button" class="pub-link bibtex-link" aria-expanded="false" aria-controls="bibtex-citeme" onclick="toggleBibtex(this)">Bibtex</button></span>
       </div>
 <div id="bibtex-citeme" class="bibtex-block">@article{press2024citeme,
   title={CiteME: Can Language Models Accurately Cite Scientific Claims?},
@@ -214,14 +212,14 @@ function toggleBibtex(id) {
     <div class="pub-thumb" style="background-image: url('/assets/thumb-entropy.png');"></div>
     <div class="pub-content">
       <strong class="pub-title">The Entropy Enigma: Success and Failure of Entropy Minimization</strong>
-      <span class="pub-authors"><u>Ori Press</u>, Ravid Shwartz-Ziv, Yann LeCun, Matthias Bethge</span>
-      <em class="pub-conf">ICML 2024</em>
+      <span class="pub-authors"><strong class="pub-author-self">Ori Press</strong>, Ravid Shwartz-Ziv, Yann LeCun, Matthias Bethge</span>
+      <span class="pub-conf">ICML 2024</span>
       <div class="pub-links">
-        <a class="pub-button" href="https://arxiv.org/pdf/2405.05012">Paper</a>
-        <a class="pub-button" href="https://github.com/oripress/EntropyEnigma">Code</a>
-        <a class="pub-button" href="https://x.com/ylecun/status/1790523417839722903">Yann Tweet</a>
-        <a class="pub-button" href="https://x.com/ziv_ravid/status/1790401347730178502">Ravid Tweet</a>
-        <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-entropy')">Bibtex</a>
+        <span class="pub-link-item"><a class="pub-link" href="https://arxiv.org/pdf/2405.05012">Paper</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://github.com/oripress/EntropyEnigma">Code</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://x.com/ylecun/status/1790523417839722903">Yann Tweet</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://x.com/ziv_ravid/status/1790401347730178502">Ravid Tweet</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><button type="button" class="pub-link bibtex-link" aria-expanded="false" aria-controls="bibtex-entropy" onclick="toggleBibtex(this)">Bibtex</button></span>
       </div>
 <div id="bibtex-entropy" class="bibtex-block">@inproceedings{press2024entropy,
   title     = {The Entropy Enigma: Success and Failure of Entropy Minimization},
@@ -242,12 +240,12 @@ function toggleBibtex(id) {
     <div class="pub-thumb" style="background-image: url('/assets/thumb-rdumb.png');"></div>
     <div class="pub-content">
       <strong class="pub-title">RDumb: A simple approach that questions our progress in continual test-time adaptation</strong>
-      <span class="pub-authors"><u>Ori Press</u>, Steffen Schneider, Matthias Kümmerer, Matthias Bethge</span>
-      <em class="pub-conf">NeurIPS 2023</em>
+      <span class="pub-authors"><strong class="pub-author-self">Ori Press</strong>, Steffen Schneider, Matthias Kümmerer, Matthias Bethge</span>
+      <span class="pub-conf">NeurIPS 2023</span>
       <div class="pub-links">
-        <a class="pub-button" href="https://arxiv.org/abs/2306.05401">Paper</a>
-        <a class="pub-button" href="https://github.com/oripress/CCC">Code</a>
-        <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-rdumb')">Bibtex</a>
+        <span class="pub-link-item"><a class="pub-link" href="https://arxiv.org/abs/2306.05401">Paper</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://github.com/oripress/CCC">Code</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><button type="button" class="pub-link bibtex-link" aria-expanded="false" aria-controls="bibtex-rdumb" onclick="toggleBibtex(this)">Bibtex</button></span>
       </div>
 <div id="bibtex-rdumb" class="bibtex-block">@article{press2023rdumb,
   title={Rdumb: A simple approach that questions our progress in continual test-time adaptation},
@@ -263,11 +261,11 @@ function toggleBibtex(id) {
     <div class="pub-thumb" style="background-image: url('/assets/thumb-calibrated.png');"></div>
     <div class="pub-content">
       <strong class="pub-title">Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling</strong>
-      <span class="pub-authors">Akis Linardos*, Matthias Kümmerer*, <u>Ori Press</u>, Matthias Bethge</span>
-      <em class="pub-conf">ICCV 2021</em>
+      <span class="pub-authors">Akis Linardos*, Matthias Kümmerer*, <strong class="pub-author-self">Ori Press</strong>, Matthias Bethge</span>
+      <span class="pub-conf">ICCV 2021</span>
       <div class="pub-links">
-        <a class="pub-button" href="https://arxiv.org/pdf/2105.12441.pdf">Paper</a>
-        <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-calibrated')">Bibtex</a>
+        <span class="pub-link-item"><a class="pub-link" href="https://arxiv.org/pdf/2105.12441.pdf">Paper</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><button type="button" class="pub-link bibtex-link" aria-expanded="false" aria-controls="bibtex-calibrated" onclick="toggleBibtex(this)">Bibtex</button></span>
       </div>
 <div id="bibtex-calibrated" class="bibtex-block">@inproceedings{linardos2021deepgaze,
   title={DeepGaze IIE: Calibrated prediction in and out-of-domain for state-of-the-art saliency modeling},
@@ -282,12 +280,12 @@ function toggleBibtex(id) {
     <div class="pub-thumb" style="background-image: url('/assets/thumb-emerging.png');"></div>
     <div class="pub-content">
       <strong class="pub-title">Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer</strong>
-      <span class="pub-authors"><u>Ori Press</u>, Tomer Galanti, Sagie Benaim, Lior Wolf</span>
-      <em class="pub-conf">ICLR 2019</em>
+      <span class="pub-authors"><strong class="pub-author-self">Ori Press</strong>, Tomer Galanti, Sagie Benaim, Lior Wolf</span>
+      <span class="pub-conf">ICLR 2019</span>
       <div class="pub-links">
-        <a class="pub-button" href="https://openreview.net/pdf?id=BylE1205Fm">Paper</a>
-        <a class="pub-button" href="https://github.com/oripress/ContentDisentanglement">Code</a>
-        <a class="pub-button bibtex-link" onclick="toggleBibtex('bibtex-emerging')">Bibtex</a>
+        <span class="pub-link-item"><a class="pub-link" href="https://openreview.net/pdf?id=BylE1205Fm">Paper</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><a class="pub-link" href="https://github.com/oripress/ContentDisentanglement">Code</a><span class="pub-link-separator" aria-hidden="true">/</span></span>
+        <span class="pub-link-item"><button type="button" class="pub-link bibtex-link" aria-expanded="false" aria-controls="bibtex-emerging" onclick="toggleBibtex(this)">Bibtex</button></span>
       </div>
 <div id="bibtex-emerging" class="bibtex-block">@inproceedings{press2019disentanglement,
   title={Emerging Disentanglement in Auto-Encoder Based Unsupervised Image Content Transfer},
