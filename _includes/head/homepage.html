@@ -317,11 +317,12 @@ body::before {
 }
 
 .pub-thumb {
+    display: block;
     flex: 0 0 150px !important;
     width: 150px !important;
     height: 150px !important;
-    background-size: cover !important;
-    background-position: center !important;
+    object-fit: cover;
+    object-position: center;
     margin-right: 0;
 }
 
