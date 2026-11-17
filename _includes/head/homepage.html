@@ -207,6 +207,10 @@ footer {
 }
 
 /* publication styling */
+:root {
+    {% include head/chess-wallpaper-inline.css %}
+}
+
 html {
     background: #ececea;
 }
@@ -226,8 +230,8 @@ body::before {
     position: fixed;
     inset: 0;
     background: #6f8563;
-    -webkit-mask: url('/assets/chess-wallpaper.svg?v=bce64a64') repeat 0 0 / 560px auto;
-    mask: url('/assets/chess-wallpaper.svg?v=bce64a64') repeat 0 0 / 560px auto;
+    -webkit-mask: var(--chess-wallpaper) repeat 0 0 / 560px auto;
+    mask: var(--chess-wallpaper) repeat 0 0 / 560px auto;
     opacity: 0.19872;
     pointer-events: none;
     z-index: -1;
