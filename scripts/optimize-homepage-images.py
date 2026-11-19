@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproduce responsive homepage images without modifying the originals.
+"""Reproduce responsive homepage images and inline profile icons.
 
 Requires Pillow 9.1+ with WebP support (python3 -m pip install Pillow).
 Run: python3 scripts/optimize-homepage-images.py
@@ -7,6 +7,7 @@ Use --check to verify the committed derivatives; a JSON manifest is printed.
 """
 
 import argparse
+from base64 import b64encode
 import hashlib
 from io import BytesIO
 import json
@@ -16,6 +17,7 @@ import sys
 from PIL import Image, ImageOps, __version__ as PILLOW_VERSION, features
 
 ROOT = Path(__file__).resolve().parents[1]
+PROFILE_ICON_DATA = ROOT / "_data/profile_icons.json"
 THUMBNAILS = (
     "thumb-binprop.png",
     "thumb-caddie.png",
@@ -88,8 +90,12 @@ def main() -> int:
     args = parser.parse_args()
     records = []
     stale = []
+    profile_icons = {}
     for source, target, image, format_name in derivatives():
         data = encode(image, format_name)
+        if source.name in SOCIAL_ICONS:
+            name = source.stem.removesuffix("-icon")
+            profile_icons[name] = "data:image/webp;base64," + b64encode(data).decode("ascii")
         if args.check:
             if not target.exists() or target.read_bytes() != data:
                 stale.append(str(target.relative_to(ROOT)))
@@ -107,6 +113,12 @@ def main() -> int:
                 "pixels_preserved_after_encoding": True,
             }
         )
+    inline_data = json.dumps(profile_icons, indent=2) + "\n"
+    if args.check:
+        if not PROFILE_ICON_DATA.exists() or PROFILE_ICON_DATA.read_text() != inline_data:
+            stale.append(str(PROFILE_ICON_DATA.relative_to(ROOT)))
+    else:
+        PROFILE_ICON_DATA.write_text(inline_data)
     print(
         json.dumps(
             {
