@@ -19,6 +19,7 @@ from PIL import Image, ImageOps, __version__ as PILLOW_VERSION, features
 
 ROOT = Path(__file__).resolve().parents[1]
 PROFILE_ICON_DATA = ROOT / "_data/profile_icons.json"
+PUBLICATION_ARTWORK = ROOT / "assets/publication-artwork"
 THUMBNAILS = (
     "thumb-binprop.png",
     "thumb-caddie.png",
@@ -39,6 +40,7 @@ SOCIAL_ICONS = (
     "linkedin-icon.png",
 )
 THUMBNAIL_SIZES = (160, 320, 480)
+THUMBNAIL_INSET = 0.08
 PORTRAIT_WIDTHS = (240, 336, 480, 648, 800)
 THUMBNAIL_QUALITY = 92
 PORTRAIT_QUALITY = 84
@@ -67,16 +69,15 @@ def encode(image: Image.Image, format_name: str, quality: Optional[int]) -> byte
 
 def derivatives():
     for name in THUMBNAILS:
-        source = ROOT / "assets" / name
+        source = PUBLICATION_ARTWORK / name
         with Image.open(source) as original:
             image = original.convert("RGBA")
             for size in THUMBNAIL_SIZES:
-                square = ImageOps.fit(
-                    image,
-                    (size, size),
-                    method=Image.Resampling.LANCZOS,
-                    centering=(0.5, 0.5),
-                )
+                inset = round(size * THUMBNAIL_INSET)
+                artwork = ImageOps.contain(image, (size - 2 * inset,) * 2, Image.Resampling.LANCZOS)
+                square = Image.new("RGB", (size, size), "white")
+                position = ((size - artwork.width) // 2, (size - artwork.height) // 2)
+                square.paste(artwork, position, artwork)
                 target = ROOT / "assets/optimized" / f"{source.stem}-{size}.webp"
                 yield source, target, square, "WEBP", THUMBNAIL_QUALITY
     source = ROOT / "images/neckar.jpeg"

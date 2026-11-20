@@ -1,0 +1,7 @@
+{%- assign asset = "/assets/optimized/thumb-" | append: include.paper | relative_url -%}
+<img class="pub-thumb"
+     src="{{ asset }}-320.webp?v=2"
+     srcset="{{ asset }}-160.webp?v=2 160w, {{ asset }}-320.webp?v=2 320w, {{ asset }}-480.webp?v=2 480w"
+     sizes="(max-width: 768px) 238px, 150px"
+     width="480" height="480" loading="lazy" decoding="async"
+     alt="{{ include.alt | escape }}">
