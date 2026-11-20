@@ -69,15 +69,20 @@ def encode(image: Image.Image, format_name: str, quality: Optional[int]) -> byte
 
 def derivatives():
     for name in THUMBNAILS:
-        source = PUBLICATION_ARTWORK / name
+        use_original_crop = name == "thumb-emerging.png"
+        source = (ROOT / "assets" if use_original_crop else PUBLICATION_ARTWORK) / name
+        inset_ratio = 0.04 if name == "thumb-binprop.png" else THUMBNAIL_INSET
         with Image.open(source) as original:
             image = original.convert("RGBA")
             for size in THUMBNAIL_SIZES:
-                inset = round(size * THUMBNAIL_INSET)
-                artwork = ImageOps.contain(image, (size - 2 * inset,) * 2, Image.Resampling.LANCZOS)
-                square = Image.new("RGB", (size, size), "white")
-                position = ((size - artwork.width) // 2, (size - artwork.height) // 2)
-                square.paste(artwork, position, artwork)
+                if use_original_crop:
+                    square = ImageOps.fit(image, (size, size), Image.Resampling.LANCZOS)
+                else:
+                    inset = round(size * inset_ratio)
+                    artwork = ImageOps.contain(image, (size - 2 * inset,) * 2, Image.Resampling.LANCZOS)
+                    square = Image.new("RGB", (size, size), "white")
+                    position = ((size - artwork.width) // 2, (size - artwork.height) // 2)
+                    square.paste(artwork, position, artwork)
                 target = ROOT / "assets/optimized" / f"{source.stem}-{size}.webp"
                 yield source, target, square, "WEBP", THUMBNAIL_QUALITY
     source = ROOT / "images/neckar.jpeg"
