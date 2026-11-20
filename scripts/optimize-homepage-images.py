@@ -13,6 +13,7 @@ from io import BytesIO
 import json
 from pathlib import Path
 import sys
+from typing import Optional
 
 from PIL import Image, ImageOps, __version__ as PILLOW_VERSION, features
 
@@ -38,18 +39,29 @@ SOCIAL_ICONS = (
     "linkedin-icon.png",
 )
 THUMBNAIL_SIZES = (160, 320, 480)
+PORTRAIT_WIDTHS = (240, 336, 480, 648, 800)
+THUMBNAIL_QUALITY = 92
+PORTRAIT_QUALITY = 84
 
 
-def encode(image: Image.Image, format_name: str) -> bytes:
+def encode(image: Image.Image, format_name: str, quality: Optional[int]) -> bytes:
     output = BytesIO()
     if format_name == "WEBP":
-        image.save(output, "WEBP", lossless=True, method=6, exact=True)
+        if quality is None:
+            image.save(output, "WEBP", lossless=True, method=6, exact=True)
+        else:
+            image.save(output, "WEBP", quality=quality, method=6)
     else:
         image.save(output, "PNG", optimize=True, compress_level=9)
     data = output.getvalue()
     with Image.open(BytesIO(data)) as decoded:
-        if decoded.convert("RGBA").tobytes() != image.convert("RGBA").tobytes():
+        if decoded.size != image.size:
+            raise ValueError("Encoded derivative changed its dimensions")
+        if quality is None and decoded.convert("RGBA").tobytes() != image.convert("RGBA").tobytes():
             raise ValueError("Encoded derivative changed its prepared image pixels")
+        if quality is not None and "A" in image.getbands():
+            if decoded.convert("RGBA").getchannel("A").tobytes() != image.getchannel("A").tobytes():
+                raise ValueError("Encoded derivative changed its transparency")
     return data
 
 
@@ -66,14 +78,21 @@ def derivatives():
                     centering=(0.5, 0.5),
                 )
                 target = ROOT / "assets/optimized" / f"{source.stem}-{size}.webp"
-                yield source, target, square, "WEBP"
+                yield source, target, square, "WEBP", THUMBNAIL_QUALITY
+    source = ROOT / "images/neckar.jpeg"
+    with Image.open(source) as original:
+        for width in PORTRAIT_WIDTHS:
+            height = round(original.height * width / original.width)
+            portrait = original.resize((width, height), Image.Resampling.LANCZOS)
+            target = ROOT / "images/optimized" / f"{source.stem}-{width}.webp"
+            yield source, target, portrait, "WEBP", PORTRAIT_QUALITY
     for name in SOCIAL_ICONS:
         source = ROOT / "images" / name
         with Image.open(source) as original:
             image = original.convert("RGBA")
             image.thumbnail((80, 80), Image.Resampling.LANCZOS)
             target = ROOT / "images/optimized" / f"{source.stem}.webp"
-            yield source, target, image, "WEBP"
+            yield source, target, image, "WEBP", None
     source = ROOT / "images/algotune-mascot.png"
     with Image.open(source) as original:
         for size in (32, 192):
@@ -81,7 +100,7 @@ def derivatives():
                 (size, size), Image.Resampling.LANCZOS
             )
             target = ROOT / "images/optimized" / f"favicon-{size}.png"
-            yield source, target, image, "PNG"
+            yield source, target, image, "PNG", None
 
 
 def main() -> int:
@@ -91,8 +110,8 @@ def main() -> int:
     records = []
     stale = []
     profile_icons = {}
-    for source, target, image, format_name in derivatives():
-        data = encode(image, format_name)
+    for source, target, image, format_name, quality in derivatives():
+        data = encode(image, format_name, quality)
         if source.name in SOCIAL_ICONS:
             name = source.stem.removesuffix("-icon")
             profile_icons[name] = "data:image/webp;base64," + b64encode(data).decode("ascii")
@@ -110,7 +129,7 @@ def main() -> int:
                 "height": image.height,
                 "bytes": len(data),
                 "sha256": hashlib.sha256(data).hexdigest(),
-                "pixels_preserved_after_encoding": True,
+                "pixels_preserved_after_encoding": quality is None,
             }
         )
     inline_data = json.dumps(profile_icons, indent=2) + "\n"

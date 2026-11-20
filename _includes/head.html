@@ -12,7 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 {% if page.url == "/" %}
-<link rel="preload" as="image" href="{{ base_path }}/images/neckar.jpeg" fetchpriority="high">
+{% include profile-photo.html preload=true %}
 {% endif %}
 
 <script>
@@ -21,7 +21,8 @@
 
 <!-- For all browsers -->
 {% if page.url == "/" %}
-<link rel="stylesheet" href="{{ base_path }}/assets/css/home-main.css">
+{% capture home_theme_scss %}@import "home-theme";{% endcapture %}
+<style>{{ home_theme_scss | scssify }}</style>
 {% else %}
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
 {% endif %}

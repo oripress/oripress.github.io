@@ -1,0 +1,15 @@
+{%- assign photo_sizes = "(max-width: 768px) 222px, 324px" -%}
+{%- assign photo_widths = "240,336,480,648,800" | split: "," -%}
+{%- capture photo_srcset -%}
+  {%- for width in photo_widths -%}
+    {{- "/images/optimized/neckar-" | relative_url -}}{{ width }}.webp {{ width }}w{% unless forloop.last %}, {% endunless %}
+  {%- endfor -%}
+{%- endcapture -%}
+{% if include.preload %}
+  <link rel="preload" as="image" type="image/webp" imagesrcset="{{ photo_srcset }}" imagesizes="{{ photo_sizes }}" fetchpriority="high">
+{% else %}
+  <picture>
+    <source type="image/webp" srcset="{{ photo_srcset }}" sizes="{{ photo_sizes }}">
+    <img src="{{ '/images/neckar.jpeg' | relative_url }}" alt="Ori Press" width="800" height="533" loading="eager" fetchpriority="high" decoding="async">
+  </picture>
+{% endif %}
