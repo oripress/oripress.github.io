@@ -41,6 +41,12 @@ SOCIAL_ICONS = (
 )
 THUMBNAIL_SIZES = (160, 320, 480)
 THUMBNAIL_INSET = 0.08
+WIDE_FIGURE_THUMBNAILS = (
+    "thumb-algotune.png",
+    "thumb-binprop.png",
+    "thumb-caddie.png",
+    "thumb-citeme.png",
+)
 PORTRAIT_WIDTHS = (240, 336, 480, 648, 800)
 THUMBNAIL_QUALITY = 92
 PORTRAIT_QUALITY = 84
@@ -71,7 +77,7 @@ def derivatives():
     for name in THUMBNAILS:
         use_original_crop = name == "thumb-emerging.png"
         source = (ROOT / "assets" if use_original_crop else PUBLICATION_ARTWORK) / name
-        inset_ratio = 0.04 if name == "thumb-binprop.png" else THUMBNAIL_INSET
+        inset_ratio = 0.04 if name in WIDE_FIGURE_THUMBNAILS else THUMBNAIL_INSET
         with Image.open(source) as original:
             image = original.convert("RGBA")
             for size in THUMBNAIL_SIZES:
