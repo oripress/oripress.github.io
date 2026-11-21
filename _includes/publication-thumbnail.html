@@ -4,5 +4,6 @@
      src="{{ asset }}-320.webp?v={{ version }}"
      srcset="{{ asset }}-160.webp?v={{ version }} 160w, {{ asset }}-320.webp?v={{ version }} 320w, {{ asset }}-480.webp?v={{ version }} 480w"
      sizes="(max-width: 768px) 238px, 150px"
-     width="480" height="480" loading="lazy" decoding="async"
+     width="480" height="480" loading="{{ include.loading | default: 'lazy' }}" decoding="async"
+     {% if include.loading == "eager" %}fetchpriority="low"{% endif %}
      alt="{{ include.alt | escape }}">

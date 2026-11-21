@@ -45,7 +45,9 @@ WIDE_FIGURE_THUMBNAILS = (
     "thumb-algotune.png",
     "thumb-binprop.png",
     "thumb-caddie.png",
+    "thumb-calibrated.png",
     "thumb-citeme.png",
+    "thumb-humanitysexam.png",
 )
 PORTRAIT_WIDTHS = (240, 336, 480, 648, 800)
 THUMBNAIL_QUALITY = 92
