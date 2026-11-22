@@ -50,7 +50,8 @@ WIDE_FIGURE_THUMBNAILS = (
     "thumb-humanitysexam.png",
 )
 PORTRAIT_WIDTHS = (240, 336, 480, 648, 800)
-THUMBNAIL_QUALITY = 92
+THUMBNAIL_QUALITY = 86
+ORIGINAL_THUMBNAIL_QUALITY = 92
 PORTRAIT_QUALITY = 84
 
 
@@ -80,6 +81,7 @@ def derivatives():
         use_original_crop = name == "thumb-emerging.png"
         source = (ROOT / "assets" if use_original_crop else PUBLICATION_ARTWORK) / name
         inset_ratio = 0.04 if name in WIDE_FIGURE_THUMBNAILS else THUMBNAIL_INSET
+        quality = ORIGINAL_THUMBNAIL_QUALITY if use_original_crop else THUMBNAIL_QUALITY
         with Image.open(source) as original:
             image = original.convert("RGBA")
             for size in THUMBNAIL_SIZES:
@@ -92,7 +94,7 @@ def derivatives():
                     position = ((size - artwork.width) // 2, (size - artwork.height) // 2)
                     square.paste(artwork, position, artwork)
                 target = ROOT / "assets/optimized" / f"{source.stem}-{size}.webp"
-                yield source, target, square, "WEBP", THUMBNAIL_QUALITY
+                yield source, target, square, "WEBP", quality
     source = ROOT / "images/neckar.jpeg"
     with Image.open(source) as original:
         for width in PORTRAIT_WIDTHS:

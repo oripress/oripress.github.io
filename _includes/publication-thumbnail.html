@@ -1,5 +1,5 @@
 {%- assign asset = "/assets/optimized/thumb-" | append: include.paper | relative_url -%}
-{%- assign version = include.version | default: 3 -%}
+{%- assign version = include.version | default: 9 -%}
 <img class="pub-thumb"
      src="{{ asset }}-320.webp?v={{ version }}"
      srcset="{{ asset }}-160.webp?v={{ version }} 160w, {{ asset }}-320.webp?v={{ version }} 320w, {{ asset }}-480.webp?v={{ version }} 480w"
